@@ -167,6 +167,59 @@ Before committing to a direction, verify each item:
 5. Repeat with 3-5 seed papers to get a comprehensive map
 ```
 
+### Research Discovery and Trend Analysis Tools
+
+Beyond traditional bibliometric software, several modern tools enable more
+effective research direction discovery:
+
+**Connected Papers (connectedpapers.com)**
+- Builds a visual graph of papers related to a seed paper.
+- Uses co-citation and bibliographic coupling (not just direct citations).
+- Reveals the landscape of related work around any paper.
+- Particularly useful for students entering a new sub-field: start with
+  one key paper and explore the graph to find the foundational and frontier works.
+- Free tier allows 5 graphs per month; sufficient for most research planning.
+
+**Iris.ai**
+- AI-powered research exploration tool.
+- Input a paper abstract or research question and get a map of related papers.
+- Uses semantic similarity rather than citation links, finding conceptually
+  related work that might not cite each other.
+- Useful for identifying cross-disciplinary connections and unexpected
+  related work in adjacent fields.
+
+**Papers With Code (paperswithcode.com)**
+- Links papers to their code implementations and benchmark results.
+- Essential for computational research: quickly assess which methods have
+  reproducible implementations and how they compare on standard benchmarks.
+- Trend analysis: track which methods are gaining traction by watching
+  benchmark leaderboards over time.
+- Identify research gaps: methods with high performance but no code, or
+  benchmarks where performance has plateaued (indicating need for new approaches).
+
+**VOSviewer (vosviewer.com)**
+- Free software for constructing and visualizing bibliometric networks.
+- Creates co-authorship, co-citation, and keyword co-occurrence maps.
+- Workflow: Export data from Scopus/WoS, import into VOSviewer, generate
+  network visualizations that reveal research clusters and bridges.
+- Temporal overlay shows which topics are emerging vs. declining.
+- Essential for literature review sections of proposals and dissertations.
+
+**CiteSpace**
+- Developed specifically for detecting emerging research trends.
+- Identifies burst keywords (terms that suddenly increase in frequency),
+  which signal emerging hot topics.
+- Creates timeline visualizations showing how research fronts evolve.
+- Particularly popular in Chinese academic circles for bibliometric analysis.
+- Complements VOSviewer with different analytical perspectives.
+
+**Semantic Scholar (semanticscholar.org)**
+- AI-powered citation context analysis distinguishes influential citations
+  from incidental ones.
+- Citation velocity metric shows which papers are gaining citations fastest.
+- TLDR feature provides one-sentence paper summaries for rapid screening.
+- Free API access enables systematic bibliometric analysis (see example below).
+
 ### Semantic Scholar API for Systematic Analysis
 
 ```python

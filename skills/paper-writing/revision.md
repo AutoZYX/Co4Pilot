@@ -146,12 +146,65 @@ Create a spreadsheet with these columns:
   - Green: Changes for Reviewer 3
   - Purple: Changes for editor comments
 
-#### LaTeX Change Tracking
-```latex
-% Option 1: latexdiff (automated)
-% Generate diff: latexdiff old.tex new.tex > diff.tex
+#### LaTeX Change Tracking with `latexdiff` (Detailed)
 
-% Option 2: Manual markup with soul package
+`latexdiff` is the standard tool for generating tracked-changes PDFs from LaTeX sources. Many journals and reviewers expect a diff PDF showing exactly what changed.
+
+**Installation**:
+```bash
+# macOS (via Homebrew)
+brew install latexdiff
+
+# Ubuntu/Debian
+sudo apt-get install latexdiff
+
+# Windows: included with TeX Live and MiKTeX
+```
+
+**Basic usage**:
+```bash
+# Generate a diff .tex file highlighting all changes
+latexdiff old_version.tex new_version.tex > diff.tex
+
+# Compile the diff file to PDF
+pdflatex diff.tex
+bibtex diff
+pdflatex diff.tex
+pdflatex diff.tex
+```
+
+**Handling multi-file projects** (with `\input{}` or `\include{}`):
+```bash
+# Flatten first, then diff
+latexdiff-vc --flatten --git -r HEAD~1 main.tex
+# Or manually:
+latexpand old/main.tex > old_flat.tex
+latexpand new/main.tex > new_flat.tex
+latexdiff old_flat.tex new_flat.tex > diff.tex
+```
+
+**Common options**:
+```bash
+# Use a specific markup style
+latexdiff --type=CFONT old.tex new.tex > diff.tex    # Default: color + font
+latexdiff --type=UNDERLINE old.tex new.tex > diff.tex # Underline additions
+latexdiff --type=CHANGEBAR old.tex new.tex > diff.tex # Margin bars
+
+# Exclude certain environments from diffing (e.g., equations, figures)
+latexdiff --exclude-textcmd="texttt" old.tex new.tex > diff.tex
+
+# For documents with complex math
+latexdiff --math-markup=0 old.tex new.tex > diff.tex
+```
+
+**Common issues and fixes**:
+- If `diff.tex` fails to compile, try `--math-markup=0` (disables math diffing)
+- For `\bibliography{}` changes, regenerate `.bbl` files from both versions
+- If using `subfiles` or `standalone`, flatten before diffing
+- Color clashes with `hyperref`: load `hyperref` after `latexdiff` preamble
+
+**Manual markup with soul package** (when latexdiff is problematic):
+```latex
 \usepackage{soul}
 \usepackage{xcolor}
 \newcommand{\revA}[1]{\textcolor{blue}{#1}}    % Reviewer 1
@@ -393,6 +446,55 @@ If you receive another round of reviews after major revision:
 - Allow 3-5 days for co-author review of the revision
 - Allow 1-2 days for formatting and upload issues
 - System downtime and upload errors happen at deadlines
+
+---
+
+## Polishing Revised Text
+
+After making substantive changes, polish the revised passages for academic quality. Use these prompts from the gpt_academic project.
+
+### English Polishing Prompt for Revised Sections
+
+```
+Below is a paragraph from a revised academic paper. This text was
+rewritten to address reviewer feedback. Polish the writing to meet
+the academic style, improve the spelling, grammar, clarity, concision
+and overall readability. When necessary, rewrite the whole sentence.
+Firstly, you should provide the polished paragraph. Secondly, you should
+list all your modification and explain the reasons to do so in markdown table.
+
+Revised paragraph:
+[PASTE YOUR REVISED PARAGRAPH]
+```
+
+### Chinese Polishing Prompt for Revised Sections
+
+```
+作为一名中文学术论文写作改进助理，你的任务是改进所提供文本的拼写、语法、清晰、
+简洁和整体可读性，同时分解长句，减少重复，并提供改进建议。请先提供文本的更正版本，
+然后在markdown表格中列出修改的内容，并给出修改的理由。
+
+修改后的段落：
+[粘贴你修改后的段落]
+```
+
+### Consistency Check After Revision
+
+```
+I have revised my paper based on reviewer feedback. Here are the key
+changes I made:
+[LIST OF CHANGES WITH SECTION REFERENCES]
+
+Please check the following sections for internal consistency:
+1. Abstract — does it still accurately reflect the paper content?
+2. Introduction contributions list — do they match the actual results?
+3. Conclusion — does it match the revised claims?
+4. Cross-references — are section/figure/table numbers still correct?
+
+Abstract: [PASTE]
+Introduction contributions: [PASTE]
+Conclusion: [PASTE]
+```
 
 ---
 

@@ -447,6 +447,66 @@ Target audience: [REVIEW PANEL TYPE]
 Total presentation time: [MINUTES]
 ```
 
+## Recommended Resources for Academic Presentation Skills
+
+### Essential Reading
+
+The following resources are widely regarded as the best guides for improving
+academic presentation skills. Read them before your first major defense.
+
+**Jonathan Shewchuk — "Giving an Academic Talk"**
+- Comprehensive guide covering slide design, delivery, and audience engagement.
+- Emphasizes the importance of telling a story rather than listing results.
+- Key takeaway: every slide should convey exactly one idea; if you need a
+  bullet list of more than 4 items, you have too much on the slide.
+- Includes specific advice for different talk lengths (5-minute lightning talks
+  to 45-minute invited lectures).
+
+**Michael Ernst — "How to Give a Talk"**
+- Practical guide from a computer science perspective, applicable across fields.
+- Covers common mistakes and how to avoid them.
+- Emphasizes practice and iteration: give the talk at least 3 times before
+  the real presentation.
+- Key takeaway: the purpose of a talk is not to present results but to
+  stimulate interest in your work; the audience should leave wanting to
+  read your paper.
+
+**Simon Peyton Jones — "How to Give a Great Research Talk"**
+- Video and written guide focused on making technical content accessible.
+- The "one message per talk" principle: identify the single key idea you
+  want the audience to remember, and build everything around it.
+- Practical advice on handling questions and managing nervousness.
+
+**Patrick Winston — "How to Speak" (MIT lecture)**
+- Classic lecture on public speaking for academics and engineers.
+- Covers the "Promise-Delivery" framework for structuring talks.
+- Discusses voice modulation, pacing, and physical presence.
+- Available as a recorded lecture; watch it at least once.
+
+### Presentation Frameworks
+
+**The Assertion-Evidence Framework (Michael Alley)**
+- Replace bullet-point slides with assertion-based slides.
+- Each slide has a sentence-length assertion as the title (not a topic phrase).
+- The body of the slide provides visual evidence supporting the assertion.
+- Research shows this format improves audience comprehension and retention.
+- Example: Instead of title "Sensor Fusion Results", use "Multi-modal fusion
+  reduces false positives by 40% compared to camera-only detection."
+
+**The Lessig Method (inspired by Lawrence Lessig)**
+- Very high slide count with minimal text per slide (1-5 words).
+- Each slide supports a single spoken phrase.
+- Creates a cinematic flow; excellent for storytelling-heavy presentations.
+- Not suitable for all academic contexts but powerful for keynotes and
+  public lectures.
+
+### Rehearsal Resources
+
+- **TED Talk guidelines**: Study TED speakers' techniques for audience engagement
+- **Toastmasters International**: Practice environment for developing speaking skills
+- **University writing centers**: Many offer presentation coaching in addition to writing support
+- **Lab presentation sessions**: Regular practice presentations within your research group
+
 ## Related
 
 - [proposal-writing.md](proposal-writing.md) - The proposal being defended

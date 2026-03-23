@@ -285,6 +285,131 @@ Before submission, verify every item:
 
 ---
 
+## AI-Powered Polishing Prompts
+
+### English Academic Polishing (from gpt_academic)
+
+```
+Below is a paragraph from an academic paper. Polish the writing to meet
+the academic style, improve the spelling, grammar, clarity, concision
+and overall readability. When necessary, rewrite the whole sentence.
+Firstly, you should provide the polished paragraph. Secondly, you should
+list all your modification and explain the reasons to do so in markdown table.
+
+Paragraph:
+[PASTE YOUR PARAGRAPH HERE]
+```
+
+### Chinese Academic Polishing (from gpt_academic)
+
+```
+作为一名中文学术论文写作改进助理，你的任务是改进所提供文本的拼写、语法、清晰、
+简洁和整体可读性，同时分解长句，减少重复，并提供改进建议。请先提供文本的更正版本，
+然后在markdown表格中列出修改的内容，并给出修改的理由。
+
+文本：
+[粘贴你的文本]
+```
+
+### Top-Conference Style Polishing (from ChatGPT-Academic-Prompt)
+
+```
+I will provide you with a text that requires refinement, and you will
+augment it with more sophisticated language and sentence structures
+appropriate for academic writing. Please maintain the original meaning
+and keep the response concise. Please follow the writing style of top
+AI conferences, such as CVPR, ICCV, ICML and NeurIPS.
+
+Text:
+[PASTE YOUR TEXT HERE]
+```
+
+### Nature-Style Rewrite (from ChatGPT-Academic-Prompt)
+
+```
+I want you to act as an academic journal editor. Please rephrase the
+paragraph from an academic angle based on the writing style of the
+Nature journal, and target the audience as expert in the related field.
+
+Paragraph:
+[PASTE YOUR PARAGRAPH HERE]
+```
+
+### Grammar Error Detection with Table Output
+
+```
+Below is a paragraph from an academic paper. Find all grammar errors
+and list them in a two-column markdown table. The first column is the
+original sentence with the error, and the second column is the corrected
+version with a brief explanation.
+
+Paragraph:
+[PASTE YOUR PARAGRAPH HERE]
+```
+
+### Mind Map Generation with Mermaid
+
+```
+Based on the following paper abstract (or outline), generate a Mermaid
+mind map diagram showing the key concepts and their relationships.
+Use the Mermaid mindmap syntax.
+
+Abstract:
+[PASTE ABSTRACT OR OUTLINE]
+```
+
+---
+
+## Writing Enhancement Tool Stack
+
+### Language and Phrasing Tools
+
+| Tool | URL | Purpose |
+|------|-----|---------|
+| **Academic Phrasebank** | phrasebank.manchester.ac.uk | Templates for academic phrases by section (intro, methods, results, discussion). University of Manchester resource. |
+| **Linggle** | linggle.com | N-gram search engine for checking if a phrase is commonly used in English. Supports wildcard patterns like `v. the * of`. |
+| **ESODA** | esoda.org | Tsinghua-developed tool for English academic expression search. Enter a Chinese phrase, get English academic equivalents. |
+| **COCA** | corpus.byu.edu/coca | Corpus of Contemporary American English (1B+ words). Check word frequency, collocations, and genre distribution. |
+| **BNC** | corpus.byu.edu/bnc | British National Corpus. Useful for British English conventions. |
+| **Ludwig.guru** | ludwig.guru | Search engine for sentences from academic papers. See how a phrase is used in context. |
+| **Grammarly** | grammarly.com | AI-powered grammar and style checker with academic tone detection. |
+
+### Prose Linting Tools
+
+| Tool | Purpose | Usage |
+|------|---------|-------|
+| **Vale** | Customizable prose linter with style rules (Microsoft, Google, academic) | `vale --config=.vale.ini paper.md` — define rules for hedging, passive voice, jargon |
+| **LanguageTool** | Open-source grammar/style checker with LaTeX support | Available as CLI, browser extension, LibreOffice plugin. Supports 30+ languages including Chinese. |
+| **textidote** | Grammar checker designed specifically for LaTeX documents | `java -jar textidote.jar --check en paper.tex` — respects LaTeX commands |
+| **proselint** | Checks for common writing issues (cliches, jargon, redundancy) | `proselint paper.md` — lightweight, opinionated |
+| **write-good** | Naive linter for English prose (passive voice, weasel words, cliches) | `write-good paper.md` — quick first-pass check |
+
+### Figure and Visualization Tools
+
+| Tool | Purpose | URL/Install |
+|------|---------|-------------|
+| **Paper-Picture-Writing-Code** | Collection of matplotlib/LaTeX plot templates for academic papers | GitHub: MLNLP-World/Paper-Picture-Writing-Code |
+| **PlotNeuralNet** | Generate publication-quality neural network architecture diagrams in LaTeX | GitHub: HarisIqbal88/PlotNeuralNet |
+| **draw.io (diagrams.net)** | Free, browser-based diagram editor. Export to PDF/SVG for LaTeX. | app.diagrams.net |
+| **Mermaid** | Text-based diagram generation (flowcharts, sequence, mind maps) | mermaid.js.org — integrates with Markdown |
+| **Mathpix** | Screenshot-to-LaTeX converter for equations and tables | mathpix.com — also converts PDF tables to LaTeX |
+| **Excel2LaTeX** | Convert Excel tables directly to LaTeX tabular code | CTAN: Excel2LaTeX |
+| **TikZ** | Native LaTeX drawing package for publication-quality graphics | Built into LaTeX — steep learning curve but maximum control |
+| **pgfplots** | LaTeX package for creating plots directly in documents | CTAN: pgfplots — consistent styling with document |
+
+### Submission Preparation Tools
+
+| Tool | Purpose | URL |
+|------|---------|-----|
+| **arxiv-latex-cleaner** | Clean LaTeX source for arXiv submission (remove comments, unused files, flatten) | GitHub: google-research/arxiv-latex-cleaner |
+| **ccfddl.github.io** | CCF-recommended conference deadline tracker (Chinese CS community standard) | ccfddl.github.io |
+| **aideadlin.es** | AI conference deadline countdown with calendar export | aideadlin.es |
+| **Overleaf** | Collaborative LaTeX editor with templates for most venues | overleaf.com |
+| **IEEE PDF eXpress** | Validate PDF formatting for IEEE conferences | ieee-pdf-express.org |
+| **LaTeX-to-Word** | Pandoc-based conversion for journals requiring .docx | `pandoc paper.tex -o paper.docx` |
+
+---
+
 ## Prompt Templates for Claude
 
 ### 1. Outline from Research Notes

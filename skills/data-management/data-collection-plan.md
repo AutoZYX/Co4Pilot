@@ -340,6 +340,52 @@ Post-Collection:
 - **Data Stewardship Wizard** (ds-wizard.org): Guided questionnaire
 - **RDMO** (rdmorganiser.github.io): Research Data Management Organiser
 
+### Nature's Recommended Data Repositories
+
+Nature Scientific Data maintains a curated, discipline-organized list of
+recommended data repositories. Using a repository from this list:
+- Satisfies journal data availability requirements for most top-tier journals
+- Signals to reviewers that your data management follows best practices
+- Ensures long-term data preservation and discoverability
+
+Key categories and recommended repositories:
+
+| Discipline | Recommended Repositories |
+|-----------|------------------------|
+| General / Multidisciplinary | Zenodo, Figshare, Dryad, Harvard Dataverse |
+| Engineering | IEEE DataPort, Zenodo |
+| Genomics / Bioinformatics | GenBank, SRA, ArrayExpress |
+| Earth / Environmental | PANGAEA, NOAA NCEI |
+| Chemistry | Cambridge Structural Database, ChEMBL |
+| Social Sciences | ICPSR, UK Data Archive |
+| Neuroscience | OpenNeuro, DANDI |
+
+Always check the current list at nature.com/sdata/policies/repositories
+as it is updated regularly.
+
+### ORCID Integration for Data Management
+
+**ORCID (Open Researcher and Contributor ID)** is a persistent identifier
+for researchers. Integrating ORCID into your data management workflow:
+
+1. **Register at orcid.org** if you do not already have an ORCID iD.
+2. **Link datasets to your ORCID profile:**
+   - Most major repositories (Zenodo, Figshare, Dryad) support automatic
+     ORCID linkage during upload.
+   - Enable the auto-update feature to have new DataCite DOIs automatically
+     added to your ORCID record.
+3. **Use ORCID in all data publications:**
+   - Include your ORCID iD in dataset metadata when depositing.
+   - This ensures proper attribution and prevents name ambiguity issues.
+4. **Benefits for data management:**
+   - Creates a single authoritative record of all your datasets across platforms.
+   - Enables funders and institutions to track data outputs from grants.
+   - Facilitates proper credit when others reuse your data.
+   - Many funders (NSFC, EU Horizon, NSF) now accept or require ORCID.
+5. **Include ORCID in your DMP:**
+   - List ORCID iDs for all team members responsible for data management.
+   - Specify that ORCID will be used for dataset metadata.
+
 ### Data Repositories
 
 | Repository | Discipline | Max Size | DOI? | Cost |
@@ -350,6 +396,7 @@ Post-Collection:
 | IEEE DataPort | Engineering | 2 TB | Yes | Free for IEEE members |
 | Hugging Face | ML/AI | Variable | No (own ID) | Free |
 | OpenDataLab | AI/CV | Variable | No | Free |
+| Google Dataset Search | Discovery layer | N/A | N/A | Free (indexes other repos) |
 
 ---
 

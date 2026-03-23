@@ -183,6 +183,66 @@ specific subfield. Write accordingly:
 5. **Include figures.** A well-labeled block diagram or flowchart communicates
    more than pages of text.
 
+### Three Golden Principles for Chinese Patent Disclosures (技术交底书撰写三原则)
+
+These principles come from experienced Chinese patent agents and significantly
+improve the quality of disclosures:
+
+**1. 多画图 (Draw More Diagrams)**
+- Include system architecture diagrams, method flowcharts, data flow diagrams,
+  and comparison charts. The patent examiner and attorney rely heavily on figures
+  to understand the invention. A disclosure with 5-10 well-crafted figures is
+  far stronger than one with text alone.
+- Draw both high-level overview diagrams and detailed component-level diagrams.
+- Include before/after comparison diagrams to illustrate the improvement.
+- Use consistent numbering (图1, 图2, ...) and reference numbers for all elements.
+
+**2. 多举例 (Give More Examples)**
+- Provide at least 2-3 concrete examples or embodiments of how the invention
+  works in practice. Each example should use specific parameters, data values,
+  and configurations.
+- Include a "best mode" example showing optimal performance.
+- Include edge-case examples showing the invention works under challenging conditions.
+- The more specific examples you provide, the broader the claim scope the
+  attorney can draft (counterintuitively, more examples enable broader claims).
+
+**3. 写好优势 (Write Strong Advantages)**
+- Clearly articulate why your invention is better than existing approaches.
+- Use quantitative comparisons: "reduces false alarm rate from 15% to 3%"
+  rather than "significantly reduces false alarms."
+- Address both technical advantages (performance, efficiency) and practical
+  advantages (cost, deployment ease, compatibility).
+- Connect advantages to specific technical features of the invention.
+
+### Document Version Naming Convention
+
+When iterating on disclosure documents with patent agents or attorneys, use
+a consistent naming convention to avoid confusion:
+
+```
+技术交底书_传感器融合方法.docx          (initial draft)
+技术交底书_传感器融合方法-v1.docx       (first revision)
+技术交底书_传感器融合方法-v1-修改版.docx (attorney's markup of v1)
+技术交底书_传感器融合方法-v2.docx       (second revision incorporating feedback)
+技术交底书_传感器融合方法-v2-定稿.docx  (final version for filing)
+```
+
+Key rules:
+- Never overwrite previous versions; always create a new file with a version suffix.
+- Use "-修改版" to indicate a version with tracked changes or comments from others.
+- Use "-定稿" to mark the final approved version.
+- Keep all versions archived for reference during prosecution.
+
+### Reference Templates
+
+For Chinese university disclosures, many institutions have their own templates.
+Check with your institution's technology transfer office (科技处/技术转移中心)
+for the required format. Common templates include:
+- USTC (中国科学技术大学) template: Well-structured template commonly referenced
+  as a model for engineering inventions
+- Tsinghua template: Comprehensive format with built-in quality checklists
+- Your own institution's template should always be preferred if available
+
 ### Structure Suggestion
 
 - Paragraph 1: Problem and its real-world impact (2-3 sentences)

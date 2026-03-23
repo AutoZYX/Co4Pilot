@@ -176,6 +176,88 @@ Don't:
 - Create a reader community group for dedicated followers
 - Run occasional Q&A sessions or polls
 
+## Research Visualization with Mind Maps
+
+### Using Mind Maps for Article Illustration
+
+Mind maps are highly effective for WeChat articles because they compress
+complex research structures into a single, visually appealing image that
+mobile readers can quickly absorb. They work particularly well for:
+- Summarizing a paper's contribution structure
+- Mapping the landscape of a research field
+- Illustrating relationships between concepts
+- Creating taxonomy visualizations for review articles
+
+### Generating Mind Maps with Mermaid
+
+Mermaid is a text-based diagramming tool that can generate mind maps directly
+from structured text. This is particularly useful when combined with AI
+tools like gpt_academic, which can automatically extract a paper's structure
+and generate Mermaid code.
+
+**Basic Mermaid Mind Map Syntax:**
+```
+mindmap
+  root((Research Topic))
+    Branch 1
+      Sub-topic 1a
+      Sub-topic 1b
+    Branch 2
+      Sub-topic 2a
+      Sub-topic 2b
+    Branch 3
+      Sub-topic 3a
+```
+
+**Example: Generating a Research Paper Mind Map**
+
+For a paper on "Multi-Sensor Fusion for SOTIF":
+```
+mindmap
+  root((Multi-Sensor Fusion for SOTIF))
+    Perception Challenges
+      Sensor degradation in adverse weather
+      Cross-sensor inconsistency
+      Unknown object categories
+    Proposed Framework
+      Confidence-aware fusion
+      Uncertainty quantification
+      Graceful degradation strategy
+    Validation
+      KITTI benchmark results
+      Adverse weather dataset
+      Real vehicle testing
+    Key Contributions
+      Novel fusion architecture
+      SOTIF-aware uncertainty model
+      Open-source implementation
+```
+
+**Workflow for WeChat Articles:**
+1. Extract the paper's key concepts and relationships.
+2. Write the Mermaid mind map code (or use gpt_academic to generate it automatically).
+3. Render the Mermaid code using:
+   - Mermaid Live Editor (mermaid.live) for quick visualization
+   - VS Code with Mermaid extension for local rendering
+   - gpt_academic's built-in Mermaid rendering capability
+4. Export as a high-resolution PNG or SVG image.
+5. Embed the image in your WeChat article as a visual summary.
+
+**Tips for Mind Map Quality:**
+- Limit to 3-4 main branches for readability on mobile screens.
+- Use concise labels (under 20 characters per node).
+- Export at high resolution (at least 1200px wide) for mobile clarity.
+- Place the mind map near the beginning of the article as an overview,
+  or at the end as a summary.
+
+### Other Visualization Tools for WeChat Articles
+
+- **XMind**: Professional mind mapping software with attractive export options
+- **Draw.io / diagrams.net**: Free diagram tool for flowcharts and system architectures
+- **Canva**: Design tool with templates for research infographics
+- **ProcessOn (processon.com)**: Chinese-language diagramming platform popular in academia
+- **Excalidraw**: Hand-drawn style diagrams that feel approachable and informal
+
 ## Legal and Ethical Considerations
 
 - Respect copyright: do not reproduce full paper text; summarize and cite

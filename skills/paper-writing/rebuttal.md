@@ -451,6 +451,78 @@ Full response:
 
 ---
 
+## Self-Review Before Submission
+
+### Pre-Submission Self-Review Prompt (from ChatGPT-Academic-Prompt)
+
+Use this prompt to simulate a critical peer review of your own paper before submitting. This helps identify weaknesses that reviewers will catch.
+
+```
+The task for you is to write a thorough paper review, as if you were a
+senior scientist in the field. The paper under review is on the topic of
+[TOPIC]. Please evaluate the following aspects:
+
+1. Summary: Provide a brief summary of the paper's main contributions.
+2. Strengths: List the key strengths of the paper (3-5 points).
+3. Weaknesses: List the key weaknesses of the paper (3-5 points).
+4. Questions for the authors: List specific questions that need
+   clarification.
+5. Suggestions for improvement: Provide actionable recommendations.
+6. Minor issues: Note any typos, formatting issues, or unclear passages.
+7. Overall assessment: Rate the paper as Strong Accept / Accept /
+   Weak Accept / Borderline / Weak Reject / Reject, with justification.
+8. Confidence: Rate your confidence in this review (1-5).
+
+Paper content:
+[PASTE YOUR PAPER OR KEY SECTIONS]
+```
+
+**When to use this**:
+- 1-2 weeks before the submission deadline, after completing a full draft
+- After all co-authors have reviewed, as a final quality check
+- Before resubmission to a new venue after rejection (to check if you fixed the issues)
+
+### Generating Point-by-Point Response Drafts
+
+When you receive actual reviews, use this prompt to generate a first-draft response:
+
+```
+I received the following reviewer comments for my paper on [TOPIC],
+submitted to [VENUE]. The decision is [DECISION].
+
+For each reviewer comment below, draft a point-by-point response that:
+1. Quotes the reviewer comment verbatim
+2. Thanks the reviewer for the specific point raised
+3. States whether we agree, partially agree, or respectfully disagree
+4. Describes the specific action taken (with section/page references)
+5. Includes draft text for any new paragraphs added to the manuscript
+6. Uses diplomatic, professional language throughout
+
+Reviewer comments:
+[PASTE ALL REVIEWER COMMENTS]
+
+My paper's key method: [BRIEF METHOD DESCRIPTION]
+Key results: [BRIEF RESULTS SUMMARY]
+```
+
+### Anticipating Reviewer Concerns
+
+Before submission, use this prompt to predict likely reviewer objections:
+
+```
+Based on the following paper summary, predict the top 5 concerns
+a critical reviewer would raise. For each predicted concern, suggest
+a preemptive action I can take before submission.
+
+Paper topic: [TOPIC]
+Method: [METHOD SUMMARY]
+Evaluation: [DATASETS AND METRICS USED]
+Main claims: [LIST 3-4 CLAIMS]
+Known limitations: [LIMITATIONS YOU ARE AWARE OF]
+```
+
+---
+
 ## References
 
 - Elsevier, "How to Respond to Reviewer Comments: A Practical Guide," Researcher Academy

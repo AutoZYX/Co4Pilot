@@ -300,12 +300,106 @@ EPO uses the "problem-solution approach":
 | Appeal to PRB (CNIPA) | 3 months from rejection | Generally not extendable |
 | Response to OA (EPO) | 4 months | 2 months extension |
 
+### CNIPA Examination Process: Detailed Timeline
+
+The CNIPA examination process for invention patents (发明专利) follows a
+well-defined sequence. Understanding this timeline helps research groups
+plan their patent strategy and resource allocation.
+
+#### Stage 1: Filing to Publication (申请到公布)
+
+```
+Filing date (申请日) → Formalities check (形式审查, 1-3 months)
+                     → Filing receipt issued (受理通知书)
+                     → Application published (公布, 18 months from filing)
+                     → Early publication available upon request (提前公布请求)
+```
+
+- Applications are automatically published 18 months after the filing date.
+- Applicants can request early publication (提前公布) to accelerate the process.
+- Early publication triggers provisional protection rights but also reveals
+  the invention to competitors.
+
+#### Stage 2: Substantive Examination (实质审查)
+
+```
+Substantive examination request → Must be filed within 3 years of filing date
+                                → Filing triggers examination queue entry
+                                → Examiner assigned (typically 6-18 months after request)
+                                → First office action issued
+```
+
+- The substantive examination request can be filed at filing or any time
+  within 3 years. Filing it early accelerates the process.
+- CNIPA prioritizes applications in certain strategic fields (AI, new energy
+  vehicles, semiconductors) with accelerated examination (优先审查).
+- Accelerated examination can reduce examination to 6-12 months.
+
+#### Stage 3: Office Action Rounds (审查意见答复)
+
+Typical timeline for each office action round:
+
+| Event | Duration |
+|-------|----------|
+| Examiner issues OA (审查意见通知书) | — |
+| Applicant prepares response | 4 months (+ 2 month extension if needed) |
+| Examiner reviews response | 2-6 months |
+| Next OA or decision | — |
+
+- Most applications receive 1-3 office actions before grant or rejection.
+- First OA (第一次审查意见) is usually the most comprehensive.
+- Second/subsequent OAs may be treated as equivalent to a "final" action.
+- If no agreement is reached after multiple rounds, CNIPA issues a
+  rejection decision (驳回决定).
+
+#### Stage 4: Grant or Appeal (授权或复审)
+
+```
+Grant decision (授权通知书) → Pay grant fees within 2 months
+                           → Patent certificate issued (专利证书)
+                           → Annual fees begin (年费)
+
+OR
+
+Rejection decision (驳回决定) → Appeal to PRB within 3 months (复审请求)
+                              → PRB review (6-18 months)
+                              → Further appeal to Beijing IP Court possible
+```
+
+#### Complete CNIPA Timeline Summary (Invention Patent)
+
+| Milestone | Cumulative Time from Filing |
+|-----------|---------------------------|
+| Filing receipt (受理通知书) | 1-2 weeks |
+| Formalities check complete | 1-3 months |
+| Application published (公布) | 18 months (or earlier if early publication requested) |
+| First office action | 24-36 months (shorter with accelerated examination) |
+| Grant (if no OA issues) | 30-42 months |
+| Grant (with 1-2 OA rounds) | 36-48 months |
+| Maximum total (with appeals) | 5-7 years |
+
+#### Accelerated Examination (优先审查) Eligibility
+
+CNIPA offers accelerated examination for applications in:
+- Energy conservation, environmental protection, new-generation IT
+- High-end equipment manufacturing, new energy, new materials, biology
+- Applications with corresponding PCT or foreign filings
+- Applications where the invention is already in use
+- Applications filed by entities in national pilot zones
+
+Accelerated examination can reduce the timeline from first OA to grant
+to approximately 6-12 months.
+
 ### Cost Considerations
 
 - Each response and extension involves fees.
 - RCE filings are costly -- try to resolve issues without them.
 - Appeals are expensive but sometimes necessary.
 - Budget for 2-3 office actions as a realistic baseline.
+- CNIPA annual fees (年费) increase over the patent lifetime:
+  Years 1-3: 900 CNY/year; Years 4-6: 1,200 CNY/year;
+  Years 7-9: 2,000 CNY/year; Years 10-12: 4,000 CNY/year (approximate).
+- Fee reductions available for universities and small entities (减缓).
 
 ## Prompt Templates for Claude
 

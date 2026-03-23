@@ -115,6 +115,74 @@ This skill helps academics systematically track, analyze, and leverage citation 
 - Discover related papers through citation graphs
 - Free alternatives to manual citation tracking
 
+### Advanced Citation Analysis Tools
+
+**Publish or Perish (harzing.com/resources/publish-or-perish)**
+- Free desktop application for citation analysis.
+- Queries Google Scholar, Scopus, Web of Science, Crossref, and Microsoft Academic.
+- Computes comprehensive metrics: h-index, g-index, e-index, hI-index (individual h-index
+  that accounts for co-authorship), age-weighted citation rate (AWCR), and more.
+- Key uses for citation tracking:
+  1. Generate detailed citation reports for specific authors or paper sets.
+  2. Compare your citation profile against peers or field averages.
+  3. Identify your fastest-growing papers (citation velocity analysis).
+  4. Prepare quantitative evidence for promotion dossiers and talent applications.
+  5. Track changes in your metrics over time by saving periodic snapshots.
+- Export results to CSV, BibTeX, or clipboard for inclusion in reports.
+- Run quarterly and maintain a spreadsheet of metric snapshots over time.
+
+**Synthical (synthical.com)**
+- AI-powered research discovery tool that tracks citation patterns.
+- Highlights emerging trends and influential new papers in your field.
+- Provides simplified summaries of cited papers, helping you quickly assess
+  relevance without reading full texts.
+- Useful for monitoring which of your papers are being cited and in what context.
+
+**Connected Papers (connectedpapers.com)**
+- Build visual citation graphs around any paper to see its context in the literature.
+- Two key views: "Prior Work" (papers that influenced it) and "Derivative Work"
+  (papers that built upon it).
+- Use to track how your own influential papers spawn new research directions.
+- Track field influence by building graphs around your key papers quarterly
+  and noting new derivative work that appears.
+
+### Google Scholar Alert Setup: Step-by-Step Guide
+
+Set up these four types of alerts to comprehensively monitor your citations:
+
+**Alert Type 1: Citations to Your Papers**
+1. Go to scholar.google.com
+2. Search for a specific paper title
+3. Click "Cited by [N]" to see citing papers
+4. Click the envelope icon (mail alert) to receive email notifications
+5. Repeat for each of your key papers (at minimum, your top 10 cited papers)
+
+**Alert Type 2: Your Name (New Citations)**
+1. Go to your Google Scholar profile
+2. Click "Follow" on your own profile
+3. You will receive notifications when new papers cite any of your work
+4. If you do not have a profile, search for your name and create an alert
+
+**Alert Type 3: Keyword Alerts (Field Monitoring)**
+1. Go to scholar.google.com
+2. Enter keywords related to your research (e.g., "SOTIF autonomous driving safety")
+3. Click the envelope icon on the search results page
+4. Set up 3-5 keyword alerts covering your core research topics
+5. These alerts track new publications in your field, not just citations to your work
+
+**Alert Type 4: Competitor/Collaborator Monitoring**
+1. Search for key researchers in your field by name
+2. Follow their Google Scholar profiles
+3. Set up alerts for their new publications
+4. This helps you stay current with the state of the art and anticipate
+   how your work will be positioned relative to peers
+
+**Recommended alert management:**
+- Review alerts weekly (batch process, do not check daily)
+- Maintain a "citation inbox" folder in your email for tracking
+- Monthly: review new citations for papers that should be read in full
+- Quarterly: update your citation metrics record using Publish or Perish
+
 ## Understanding Citation Patterns
 
 ### Normal Citation Trajectory

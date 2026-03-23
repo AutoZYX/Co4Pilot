@@ -62,6 +62,104 @@ Key settings:
 - Enable "Automatic export: When idle" for .bib file syncing
 - Set "Keep citation keys unique" to prevent conflicts
 
+### Better BibTeX: Advanced Configuration
+
+Better BibTeX is the most important Zotero plugin for LaTeX users. Here is a detailed setup guide:
+
+**Installation**: Download from retorque.re/zotero-better-bibtex and install via Zotero > Tools > Add-ons.
+
+**Citation Key Configuration** (Preferences > Better BibTeX > Citation Keys):
+```
+# Recommended formats by use case:
+
+# Short and memorable (good for solo projects):
+[auth:lower][year]
+# Output: zhang2024, wang2023
+
+# With short title (good for large libraries to avoid collisions):
+[auth:lower][year][shorttitle:lower:skipwords:3]
+# Output: zhang2024weatherfusion, wang2023safetyvalidation
+
+# First author + year + first significant word:
+[auth:lower][year][Title:skipwords:nopunct:lower:select=1,1]
+# Output: zhang2024robust
+
+# For Chinese authors (pinyin-friendly):
+[auth:lower:replace=ü,v][year]
+# Output: lv2024 (for 吕)
+```
+
+**Auto-Export Setup** (critical for Overleaf/LaTeX workflows):
+1. Right-click your project collection > Export Collection
+2. Format: "Better BibLaTeX" (or "Better BibTeX" for legacy)
+3. Check "Keep updated" -- this creates a live-syncing .bib file
+4. Save to your LaTeX project folder or Overleaf-synced directory
+5. The .bib file updates automatically whenever you add/edit references
+
+**Useful settings**:
+- `Preferences > Better BibTeX > Export > Fields to omit`: Set to `abstract,file,keywords` to keep .bib files small
+- `Automatic export: When idle`: Prevents export during batch imports
+- `Citation key formula: On conflict: postfixed`: Adds a/b/c suffixes for key collisions
+
+### ZotFile for PDF Management (Zotero 6)
+
+ZotFile provides advanced PDF management. Note: Zotero 7 has built-in file management, but ZotFile remains useful for Zotero 6 users.
+
+**Key features**:
+- Automatically rename PDFs based on metadata (Author_Year_Title.pdf)
+- Move PDFs to a custom directory (useful for cloud sync)
+- Extract annotations from PDFs into Zotero notes
+- Send PDFs to tablet for reading (via cloud folder)
+
+**Recommended rename rules** (ZotFile Preferences > Renaming Rules):
+```
+{%a}_{%y}_{%t}
+# Output: Zhang_2024_Weather Robust Perception for Autonomous Driving.pdf
+
+# Or shorter:
+{%a}_{%y}_{%w}
+# Output: Zhang_2024_Weather.pdf (first word of title)
+```
+
+### Jasminum (茉莉花) Plugin for CNKI
+
+Jasminum is essential for Chinese researchers who use CNKI (知网). It fixes the metadata quality issues that plague CNKI imports.
+
+**What it does**:
+- Retrieves correct metadata for CNKI papers (which often import with garbled or incomplete data)
+- Splits merged author names into individual entries
+- Converts CNKI-specific fields to standard Zotero fields
+- Adds Chinese abstracts and keywords
+
+**Installation**: GitHub: l0o0/jasminum. Install via Zotero > Tools > Add-ons.
+
+**Usage**:
+1. Import CNKI papers into Zotero (via Connector or .ris export)
+2. Select the imported items
+3. Right-click > Jasminum > Pull CNKI metadata
+4. Jasminum fetches correct metadata from CNKI and updates the records
+
+### Chinese Citation Styles (GB/T 7714)
+
+For Chinese academic papers, the GB/T 7714-2015 standard is mandatory. The `zotero-chinese/styles` project provides properly formatted CSL files.
+
+**Installation**:
+1. Visit GitHub: zotero-chinese/styles
+2. Download the appropriate style:
+   - `gb-t-7714-2015-numeric.csl` — Numeric citation style [1]
+   - `gb-t-7714-2015-author-date.csl` — Author-date style (Zhang, 2024)
+   - `gb-t-7714-2015-note.csl` — Footnote style
+3. Install in Zotero: Preferences > Cite > Styles > + (add from file)
+
+**For LaTeX users**: Use the `gbt7714` package:
+```latex
+\usepackage{gbt7714}
+% Numeric style:
+\bibliographystyle{gbt7714-numerical}
+% Author-year style:
+\bibliographystyle{gbt7714-author-year}
+```
+
 ### Sync Configuration
 - Enable Zotero Sync for library metadata (free, unlimited)
 - For PDF storage, choose ONE of:
@@ -327,6 +425,27 @@ After adding any reference, verify:
 ---
 
 ## Prompt Templates for Claude
+
+### Convert Formatted References to BibTeX (from gpt_academic)
+
+```
+Convert the following formatted references into BibTeX entries.
+For each reference:
+1. Determine the correct entry type (@article, @inproceedings, @book, etc.)
+2. Extract all fields: author, title, journal/booktitle, year, volume,
+   number, pages, doi
+3. Generate a citation key in the format [firstauthor_lowercase][year]
+4. Protect proper nouns in titles with {braces}
+5. Use standard BibTeX field names and formatting
+
+References to convert:
+[PASTE YOUR REFERENCE LIST HERE]
+```
+
+This is especially useful when:
+- Converting a bibliography from a Word document to LaTeX
+- Importing references from a PDF where metadata extraction fails
+- Converting Chinese GB/T 7714 formatted references to BibTeX
 
 ### Clean BibTeX Entries
 ```

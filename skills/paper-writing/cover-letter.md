@@ -304,6 +304,52 @@ this manuscript presents [brief description].
 
 ---
 
+## Journal Selection Tools
+
+Choosing the right journal is critical. Use these tools to evaluate fit, impact, and acceptance likelihood before writing your cover letter.
+
+### Journal Selection Platforms
+
+| Tool | URL | Features |
+|------|-----|----------|
+| **Journal Citation Reports (JCR)** | jcr.clarivate.com | Official Impact Factor (IF) rankings by Clarivate. Filter by category, quartile (Q1-Q4), and subject area. Requires institutional access. |
+| **LetPub** | letpub.com.cn/index.php?page=journalapp | Chinese researcher's go-to for journal selection. Shows IF, acceptance rate, review speed, and user-submitted experiences (审稿周期). Supports filtering by SCI/EI zone (中科院分区). |
+| **小木虫 (Emuch)** | emuch.net | China's largest academic forum. Search for specific journal experiences: review timeline, reviewer comments, acceptance difficulty. Invaluable for understanding real-world journal behavior. |
+| **Scopus Sources** | scopus.com/sources | Browse journals indexed in Scopus. Shows CiteScore, SJR, SNIP metrics. Useful for verifying Scopus indexing status. |
+| **DOAJ** | doaj.org | Directory of Open Access Journals. Verify if an OA journal is legitimate (not predatory). |
+| **Journal Finder (Elsevier)** | journalfinder.elsevier.com | Paste your abstract; get journal recommendations ranked by relevance. Elsevier journals only. |
+| **Journal Suggester (Springer)** | journalsuggester.springer.com | Same concept for Springer Nature journals. |
+| **IEEE Publication Recommender** | publication-recommender.ieee.org | Recommend IEEE journals/conferences based on your abstract. |
+| **Beall's List** | beallslist.net | List of potentially predatory publishers and journals. Check before submitting to unfamiliar journals. |
+
+### Chinese Academy of Sciences (CAS) Journal Ranking (中科院分区)
+
+The CAS ranking system is widely used in Chinese universities for faculty evaluation and graduation requirements:
+
+| Zone | Meaning | Approximate IF Range | Evaluation Weight |
+|------|---------|---------------------|-------------------|
+| **1区 (Zone 1)** | Top 5% by IF in each category | Highest in category | Highest recognition |
+| **2区 (Zone 2)** | Top 6-20% | Upper range | Strong recognition |
+| **3区 (Zone 3)** | Top 21-50% | Mid range | Moderate recognition |
+| **4区 (Zone 4)** | Bottom 50% | Lower range | Basic recognition |
+
+**Note**: CAS zones and JCR quartiles (Q1-Q4) use different calculation methods and may not align perfectly. Always check both.
+
+### Journal Selection Decision Framework
+
+When choosing a journal, evaluate these factors:
+
+1. **Scope fit**: Does your paper match the journal's aims and scope? Read 3-5 recent papers.
+2. **Impact Factor / CAS Zone**: Match to your institutional requirements.
+3. **Review speed**: Check LetPub or 小木虫 for reported review timelines.
+4. **Acceptance rate**: Lower rates generally correlate with higher prestige.
+5. **Open Access policy**: Consider APC costs and funder requirements.
+6. **Indexing**: Verify SCI, EI, Scopus, or CSCD indexing as needed.
+7. **Page charges**: Some journals charge per page or for color figures.
+8. **Audience**: Who reads this journal? Will your target audience find your paper?
+
+---
+
 ## Pre-Submission Checklist
 
 - [ ] Cover letter addressed to the correct editor by name

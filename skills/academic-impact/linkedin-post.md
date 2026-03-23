@@ -193,6 +193,71 @@ The first 2-3 lines appear before the "see more" fold. They determine whether an
 - **LinkedIn + ResearchGate**: LinkedIn for broad reach, ResearchGate for paper-specific engagement
 - **LinkedIn + YouTube**: Share video clips on LinkedIn, full talks on YouTube
 
+### WeChat-LinkedIn Cross-Promotion Strategy
+
+For Chinese academics with both international and domestic audiences, coordinating
+content between WeChat and LinkedIn maximizes reach and impact:
+
+**Content Adaptation Framework:**
+
+| WeChat Article | LinkedIn Adaptation |
+|---------------|-------------------|
+| 2,500-3,500 character Chinese article | 800-1,300 character English post (key findings only) |
+| Detailed technical discussion | High-level insight with link to full article |
+| Chinese field commentary | International perspective on the same topic |
+| Research paper summary (Chinese) | Paper announcement post (English) |
+| Tutorial/guide (Chinese) | Carousel post summarizing key steps (English) |
+
+**Timing Strategy:**
+1. Publish the WeChat article first (reaches Chinese audience during their active hours).
+2. Within 24-48 hours, publish the LinkedIn adaptation (reaches international audience).
+3. In the LinkedIn post, optionally mention: "Full analysis available on our WeChat
+   account [account name]" to drive cross-platform followers.
+4. In the WeChat article, add a note: "This content is also shared on LinkedIn for
+   our international readers" to signal your international presence.
+
+**Bidirectional Content Flow:**
+
+```
+WeChat → LinkedIn:
+  - Chinese research summary → English key findings post
+  - Field commentary in Chinese → International perspective post
+  - Conference report (Chinese conference) → Global trend analysis
+
+LinkedIn → WeChat:
+  - English paper announcement → Detailed Chinese summary with context
+  - International conference takeaways → Analysis for domestic audience
+  - Global industry trends → Implications for Chinese market
+```
+
+**Cross-Promotion Tactics:**
+- Include LinkedIn profile URL on WeChat article author bio.
+- Include WeChat QR code in LinkedIn profile "Featured" section.
+- When sharing a paper, post on both platforms the same week but with
+  different angles (technical depth on WeChat, accessible hook on LinkedIn).
+- Share LinkedIn engagement metrics (comments, shares) on WeChat to
+  demonstrate international recognition, and vice versa.
+- For major publications or milestones: coordinate announcements across
+  both platforms for maximum visibility.
+
+**Audience Segmentation:**
+- WeChat audience: Chinese academics, industry practitioners, students,
+  policymakers, and potential graduate students in China.
+- LinkedIn audience: International researchers, global industry contacts,
+  potential collaborators, conference organizers, and journal editors.
+- Tailor content framing accordingly: domestic policy context for WeChat,
+  international research context for LinkedIn.
+
+**Content Repurposing Workflow:**
+1. Write the primary content piece (usually the longer, more detailed version).
+2. Extract 3-5 key insights for the cross-platform adaptation.
+3. Reframe for the target audience (language, context, examples).
+4. Create platform-appropriate visuals (square images for LinkedIn,
+   portrait-oriented for WeChat).
+5. Schedule publication within a 48-hour window across platforms.
+6. Monitor engagement on both platforms and cross-pollinate high-performing
+   content ideas.
+
 ## Prompt Templates
 
 ### Write a Paper Announcement Post

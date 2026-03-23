@@ -181,10 +181,13 @@ Priority Score = sum of all columns. File highest scores first.
 
 ## Prior Art Search Guide
 
-### Chinese Patent Database
+### Chinese Patent Databases
 - **CNIPA Patent Search (中国专利公布公告):** https://pss-system.cponline.cnipa.gov.cn/
 - Free, official, comprehensive for Chinese patents
 - Search by keyword, applicant, inventor, IPC code, date range
+- **Shanghai IP Service Platform (上海知识产权服务平台):** Regional platform with enhanced search tools and analytics for patent landscape mapping
+- **Baiten (白腾):** Commercial Chinese patent search with AI-powered similarity analysis
+- **SooPAT (搜专利):** Free search platform with visualization and statistical analysis features
 
 ### International Databases
 - **Google Patents:** https://patents.google.com/ — best for broad keyword search across jurisdictions
@@ -316,6 +319,20 @@ A patent portfolio is a coordinated set of patents that collectively protect a c
 - Product demonstrations or press releases
 - Online preprint postings (arXiv, SSRN, etc.)
 
+### Critical Timing Rules for Patent and R&D Alignment
+
+The following timing principles ensure that patent filing integrates seamlessly with the research lifecycle:
+
+1. **Patent search should run in parallel with R&D.** Do not wait until the research is finished to start searching prior art. Begin searching as soon as the research direction is established. This avoids investing months in a direction that is already patented.
+
+2. **Patent writing should finish when pre-research (预研) ends.** The technical disclosure and draft patent application should be substantially complete by the time exploratory research concludes and before full implementation begins. This ensures the broadest possible claim scope.
+
+3. **The patent must be filed BEFORE any public disclosure.** No exceptions. You must receive the 受理通知书 (Notice of Acceptance / Filing Receipt) from CNIPA before any paper submission, conference presentation, thesis defense, or preprint posting. The 受理通知书 confirms that CNIPA has accepted your application and assigned a filing date.
+
+4. **Do not submit papers or give talks until you have the 受理通知书 in hand.** The filing date on the 受理通知书 is your priority date. Any disclosure before this date risks destroying novelty.
+
+5. **Prior art search is a continuous activity.** Update your prior art search at each major research milestone: direction selection, algorithm design, experimental validation, and pre-filing review.
+
 ### China's Grace Period (宽限期)
 Chinese patent law provides a 6-month grace period, but ONLY in limited circumstances:
 - First presentation at a Chinese government-approved academic conference
@@ -327,11 +344,12 @@ Chinese patent law provides a 6-month grace period, but ONLY in limited circumst
 ### Recommended Timeline for Research Groups
 ```
 Research result obtained → Internal review (1-2 weeks)
-                         → Prior art search (1-2 weeks)
+                         → Prior art search (1-2 weeks, should already be ongoing)
                          → Technical disclosure drafted (2-3 weeks)
                          → Patent attorney review (1-2 weeks)
-                         → Patent application filed (←— THIS before publication)
-                         → Paper submitted to journal/conference (after filing)
+                         → Patent application filed
+                         → Receive 受理通知书 (←— MUST have this before any disclosure)
+                         → Paper submitted to journal/conference (after 受理通知书)
 ```
 
 ### For PhD Students
@@ -339,6 +357,7 @@ Research result obtained → Internal review (1-2 weeks)
 - Every significant technical contribution should be evaluated for patentability
 - Discuss patent potential at regular advisor meetings
 - Target: 1-2 patent applications during the PhD (varies by lab and field)
+- Start prior art searches early and run them in parallel with your literature review
 
 ---
 

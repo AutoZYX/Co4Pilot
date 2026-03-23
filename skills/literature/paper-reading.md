@@ -295,6 +295,90 @@ Apply these questions systematically to any empirical paper:
 
 ---
 
+## PDF Reading and Translation Tools
+
+### Translation Tools for Non-English Papers
+
+| Tool | Purpose | Features |
+|------|---------|----------|
+| **CopyTranslator** | Real-time PDF translation while reading | Copy text from PDF, automatically translates in a floating window. Handles line-break concatenation (removes spurious line breaks from PDF copy). Open-source, GitHub: CopyTranslator/CopyTranslator. |
+| **Saladict (沙拉查词)** | Browser-based dictionary and translation popup | Multi-dictionary lookup (Cambridge, Longman, Oxford, Google, DeepL). Hover or double-click for instant translation. Chrome/Firefox extension. Excellent for reading papers in browser-based PDF viewers. |
+| **Zotero PDF Translate** | In-Zotero translation for PDF annotations | Translate selected text directly in Zotero's built-in PDF reader. Supports DeepL, Google, Bing, Baidu, and Tencent translation APIs. Install from GitHub: windingwind/zotero-pdf-translate. |
+| **DeepL** | High-quality academic translation | Superior to Google Translate for academic text. Desktop app supports drag-and-drop PDF translation. Free tier: 5000 chars/month. |
+| **知云文献翻译** | Full-page PDF translation for Chinese researchers | Specifically designed for academic PDFs. Preserves formatting. Desktop app for Windows/Mac. zhiyunwenxian.cn. |
+
+### AI-Powered Paper Reading (gpt_academic style)
+
+Use these prompts for AI-assisted paper comprehension:
+
+#### Paper Summary Prompt
+```
+Read the following paper abstract and introduction, then provide:
+1. A one-paragraph summary of the paper's main contribution
+2. The key problem being solved and why it matters
+3. The proposed approach in 2-3 sentences
+4. The headline quantitative result
+5. Three questions I should investigate when reading the full paper
+
+Title: [TITLE]
+Abstract: [PASTE ABSTRACT]
+Introduction: [PASTE INTRODUCTION]
+```
+
+#### Section-by-Section Analysis Prompt
+```
+I am reading a paper on [TOPIC]. I have just read the [SECTION NAME]
+section. Here is the content:
+
+[PASTE SECTION TEXT]
+
+Please help me understand:
+1. What is the main point of this section?
+2. What are the key assumptions made?
+3. Are there any logical gaps or unclear steps?
+4. How does this connect to the previous section?
+5. What should I pay attention to in the next section?
+```
+
+#### Critical Analysis Prompt for Deep Reading
+```
+I have finished reading this paper and want to critically evaluate it.
+Here are my notes:
+
+Title: [TITLE]
+Main claim: [CLAIM]
+Method: [METHOD SUMMARY]
+Key result: [RESULT]
+My initial impression: [YOUR THOUGHTS]
+
+Please act as a critical reviewer and help me:
+1. Identify 3 strengths that make this paper valuable
+2. Identify 3 weaknesses or potential issues
+3. List unstated assumptions that could affect validity
+4. Suggest 2 experiments that would strengthen or challenge the claims
+5. Rate the paper's reproducibility (what is missing for replication?)
+6. Identify how this paper could inspire my own research on [YOUR TOPIC]
+```
+
+#### Paper Comparison Prompt
+```
+I have read these two papers that propose different solutions to [PROBLEM]:
+
+Paper A: [TITLE, YEAR] - [ONE-LINE SUMMARY]
+Paper B: [TITLE, YEAR] - [ONE-LINE SUMMARY]
+
+Key differences I noticed:
+[YOUR OBSERVATIONS]
+
+Please help me create:
+1. A structured comparison table (method, data, metrics, results, limitations)
+2. Analysis of which approach is stronger and under what conditions
+3. Whether the two approaches could be combined
+4. What gap remains unaddressed by both papers
+```
+
+---
+
 ## Common Reading Mistakes
 
 1. **Reading linearly from start to finish**: Always do Pass 1 first to decide priority

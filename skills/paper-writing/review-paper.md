@@ -317,6 +317,108 @@ The PRISMA 2020 statement includes items covering:
 
 ---
 
+## Bibliometric Analysis Tools (Detailed)
+
+### VOSviewer
+
+VOSviewer (van Eck & Waltman, Leiden University) is the most widely used free tool for constructing and visualizing bibliometric networks.
+
+**Key capabilities**:
+- **Co-occurrence networks**: Visualize which keywords appear together across papers
+- **Co-citation networks**: Show which references are frequently cited together
+- **Bibliographic coupling**: Connect papers that share references
+- **Co-authorship networks**: Map collaboration patterns
+
+**Workflow**:
+1. Export data from Web of Science (Full Record + Cited References, Tab-delimited) or Scopus (CSV with all fields)
+2. Open VOSviewer > Create > Create a map based on bibliographic data
+3. Choose analysis type (co-occurrence, co-citation, bibliographic coupling)
+4. Set minimum thresholds (e.g., minimum 5 occurrences for keywords)
+5. Export the visualization as PNG/SVG for your paper
+6. Use the "Overlay visualization" mode to show temporal evolution (color = year)
+
+**Download**: vosviewer.com (free, Java-based, Windows/Mac/Linux)
+
+### CiteSpace
+
+CiteSpace (Chaomei Chen, Drexel University) excels at detecting emerging trends and burst analysis, and is particularly popular in Chinese academic circles.
+
+**Key capabilities**:
+- **Burst detection**: Identify keywords/references with sudden citation increases (emerging hot topics)
+- **Timeline view**: Show how research fronts evolve chronologically
+- **Cluster analysis**: Automatically label topic clusters using LSI/LLR/MI algorithms
+- **Betweenness centrality**: Find bridging papers that connect different research communities
+
+**Workflow**:
+1. Export from Web of Science in "Plain Text" format (Other File Formats > Plain Text)
+2. Import into CiteSpace and set time slicing parameters
+3. Run analysis for keyword co-occurrence, reference co-citation, or author co-citation
+4. Generate burst detection report (identifies sudden surges in keyword/citation frequency)
+5. Export visualizations for your review paper
+
+**Download**: citespace.podia.com (free for academic use)
+
+### Connected Papers and ResearchRabbit for Discovery
+
+| Tool | URL | Best For |
+|------|-----|----------|
+| **Connected Papers** | connectedpapers.com | Enter a seed paper, get a visual graph of related papers based on co-citation and bibliographic coupling. Free for 5 graphs/month. Excellent for quickly mapping a sub-field around a specific paper. |
+| **ResearchRabbit** | researchrabbit.ai | "Spotify for research papers." Add seed papers to a collection; the system continuously recommends related papers. Integrates with Zotero. Free. Best for ongoing discovery as your review evolves. |
+| **Litmaps** | litmaps.com | Interactive citation maps with timeline view. Shows how papers connect chronologically. Free tier available. |
+| **Inciteful** | inciteful.xyz | Build a network of papers from seed papers, find important papers you may have missed. Free and open-source. |
+
+### Bibliometrix R Package
+
+For researchers comfortable with R, the `bibliometrix` package provides the most comprehensive bibliometric analysis:
+
+```r
+# Install
+install.packages("bibliometrix")
+library(bibliometrix)
+
+# Import data (from Web of Science or Scopus export)
+D <- convert2df(file = "wos_export.txt", dbsource = "wos", format = "plaintext")
+
+# Descriptive analysis
+results <- biblioAnalysis(D, sep = ";")
+summary(results, k = 10)
+
+# Keyword co-occurrence network
+NetMatrix <- biblioNetwork(D, analysis = "co-occurrences", network = "keywords", sep = ";")
+net <- networkPlot(NetMatrix, n = 30, type = "fruchterman", Title = "Keyword Co-occurrence")
+
+# Thematic map (strategic diagram)
+Map <- thematicMap(D, field = "DE", n = 250, minfreq = 5)
+plot(Map$map)
+
+# Launch interactive web interface
+biblioshiny()  # Opens a Shiny app with all analyses
+```
+
+### Systematic Review Search Protocol Prompt
+
+```
+I am planning a systematic review on [TOPIC]. Help me generate a
+complete PRISMA-compliant search protocol covering:
+
+1. Research question using PICO/PCC framework
+2. Specific search strings for Web of Science, Scopus, and [domain database]
+3. Inclusion/exclusion criteria with clear operational definitions
+4. Quality assessment criteria tailored to [study type]
+5. Data extraction form with columns appropriate for my research domain
+6. Plan for handling disagreements between screeners
+7. PRISMA flow diagram template with placeholder numbers
+8. Registration recommendation (PROSPERO vs. OSF)
+
+Topic: [TOPIC]
+Discipline: [DISCIPLINE]
+Target journal: [JOURNAL]
+Approximate time range: [YEARS]
+Expected number of included studies: [ESTIMATE]
+```
+
+---
+
 ## Prompt Templates for Claude
 
 ### Design a Review Protocol

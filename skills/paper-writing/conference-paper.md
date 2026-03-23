@@ -296,6 +296,104 @@ Most journals require that a journal version contains at least 30% new content b
 
 ---
 
+## Conference Deadline Tracking Tools
+
+### Deadline Aggregators
+
+| Tool | URL | Features |
+|------|-----|----------|
+| **ccfddl.github.io** | ccfddl.github.io | CCF-recommended conference deadlines. Filter by CCF rank (A/B/C), category (AI, networks, security, etc.). Supports calendar subscription (iCal). The de facto standard for Chinese CS researchers. |
+| **aideadlin.es** | aideadlin.es | AI/ML conference deadlines with countdown timers. Color-coded by sub-field (CV, NLP, ML, robotics). Export to Google Calendar. |
+| **WikiCFP** | wikicfp.com | Broader coverage including workshops and symposia. User-submitted, so verify dates independently. |
+| **Conference Partner** | myhuiban.com | Chinese platform (会伴) with conference rankings, past acceptance rates, and reviewer experience sharing. |
+
+### CCF Ranking System (中国计算机学会推荐)
+
+The China Computer Federation (CCF) ranks conferences and journals into three tiers. Understanding CCF rankings is essential for Chinese academic evaluation.
+
+| Rank | Meaning | Examples (AI/CV) | Examples (Systems) |
+|------|---------|-----------------|-------------------|
+| **CCF-A** | Top-tier, internationally leading | CVPR, NeurIPS, ICML, ICLR, AAAI, IJCAI, ACM MM | OSDI, SOSP, SIGCOMM, MOBICOM |
+| **CCF-B** | High-quality, internationally well-known | ECCV, ICCV (note: ICCV is A since 2022 list), COLT, ECML | SenSys, Middleware, ICDCS |
+| **CCF-C** | Recognized international conferences | ACCV, BMVC, WACV, AISTATS | HotOS, LCTES |
+
+**Important notes**:
+- The CCF list is updated periodically (latest update: check ccf.org.cn)
+- Some universities and funding agencies have their own ranking lists that may differ
+- For automotive/ITS researchers: IEEE IV is CCF-C; IEEE ITSC is not on the CCF list
+- Always verify the current ranking at ccf.org.cn/Academic-Evaluation
+
+### arxiv-latex-cleaner for Submission Preparation
+
+Before submitting to arXiv or conference systems, clean your LaTeX source:
+
+```bash
+# Install
+pip install arxiv-latex-cleaner
+
+# Basic usage: creates a cleaned copy of your project
+arxiv_latex_cleaner /path/to/your/paper/
+
+# Common options
+arxiv_latex_cleaner /path/to/paper/ \
+  --remove_todo_comments \          # Strip TODO/FIXME comments
+  --resize_images \                 # Compress images to reduce upload size
+  --im_size 500 \                   # Max image dimension in pixels
+  --compress_pdf \                  # Compress embedded PDFs
+  --commands_to_delete '\todo'      # Remove specific custom commands
+```
+
+**What it does**:
+- Removes all comments (including `%TODO`, `\todo{}`)
+- Strips unused `.tex`, `.bib`, and image files
+- Flattens `\input{}` and `\include{}` into a single file
+- Optionally resizes images to reduce file size (arXiv has a 50MB limit)
+- Removes auxiliary files (`.aux`, `.log`, `.synctex`)
+
+### Additional LaTeX Space-Saving Tricks
+
+```latex
+% Reduce space between items in lists
+\usepackage{enumitem}
+\setlist{nosep}  % or \setlist{itemsep=1pt, parsep=0pt}
+
+% Reduce space around section headings
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\titlespacing*{\subsection}{0pt}{4pt}{2pt}
+
+% Compact bibliography (IEEEtran)
+\bibliographystyle{IEEEtran}
+{\footnotesize \bibliography{refs}}
+
+% Reduce space between columns in two-column layout
+\setlength{\columnsep}{0.2in}  % default is usually 0.25in
+
+% Shrink table text without changing column structure
+\begin{table}
+\centering
+\footnotesize  % or \scriptsize for more aggressive shrinking
+\begin{tabular}{...}
+...
+\end{tabular}
+\end{table}
+
+% Use booktabs for professional tables with less vertical space
+\usepackage{booktabs}
+% \toprule, \midrule, \bottomrule instead of \hline
+
+% Reduce vertical space around figures
+\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+
+% Force figures to appear where you want them
+\usepackage{float}
+\begin{figure}[H]  % Exact placement
+```
+
+---
+
 ## Common Pitfalls
 
 1. **Submitting to the wrong venue**: Match your contribution to the conference scope

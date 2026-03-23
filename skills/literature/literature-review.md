@@ -455,6 +455,121 @@ Please generate:
 
 ---
 
+## Bibliometric Analysis Tools (Detailed Guide)
+
+### VOSviewer Workflow for Review Papers
+
+VOSviewer (Leiden University) is the most widely used free bibliometric visualization tool.
+
+**Step-by-step workflow**:
+1. **Export data**: From Web of Science, export as "Full Record and Cited References" in Tab-delimited format. From Scopus, export as CSV with all fields.
+2. **Create a map**: Open VOSviewer > Create > Create a map based on bibliographic data
+3. **Choose analysis type**:
+   - **Keyword co-occurrence**: Shows which topics appear together (use Author Keywords or Keywords Plus)
+   - **Co-citation analysis**: Reveals intellectual foundations (which references cluster together)
+   - **Bibliographic coupling**: Connects papers sharing references (identifies current research fronts)
+   - **Co-authorship**: Maps collaboration networks
+4. **Set thresholds**: For keyword co-occurrence, require minimum 5 occurrences. For co-citation, minimum 10 citations.
+5. **Interpret the visualization**: Clusters (colors) represent distinct research themes. Distance between nodes indicates relatedness. Node size reflects frequency/citations.
+6. **Overlay visualization**: Switch to overlay mode to color nodes by publication year — reveals temporal evolution of topics.
+7. **Export**: Save as PNG/SVG for publication. Export the network data as CSV for further analysis.
+
+**Download**: vosviewer.com (free, cross-platform)
+
+### CiteSpace for Burst Detection and Trend Analysis
+
+CiteSpace excels at identifying emerging research fronts through citation burst detection.
+
+**Key analyses for review papers**:
+- **Citation burst detection**: Identifies references or keywords with sudden surges in frequency. A burst indicates an emerging hot topic.
+- **Timeline visualization**: Shows how research clusters evolve year by year.
+- **Betweenness centrality**: Finds "bridge" papers connecting different research communities — these are often the most important papers to cite.
+- **Modularity analysis**: Measures how cleanly the field separates into distinct sub-communities.
+
+**Data preparation**: Export from Web of Science in "Plain Text" format (not Tab-delimited). CiteSpace requires this specific format.
+
+**Download**: citespace.podia.com (free for academic use)
+
+### Bibliometrix R Package
+
+For researchers needing programmatic control or advanced analysis:
+
+```r
+install.packages("bibliometrix")
+library(bibliometrix)
+
+# Import and analyze
+D <- convert2df(file = "wos_export.txt", dbsource = "wos", format = "plaintext")
+results <- biblioAnalysis(D, sep = ";")
+
+# Key outputs for review papers:
+# 1. Most cited papers and authors
+summary(results, k = 20)
+
+# 2. Thematic map (strategic diagram) — classifies themes into:
+#    - Motor themes (high centrality, high density): well-developed and important
+#    - Niche themes (low centrality, high density): specialized
+#    - Emerging themes (low centrality, low density): new or declining
+#    - Basic themes (high centrality, low density): foundational but undeveloped
+Map <- thematicMap(D, field = "DE", n = 250, minfreq = 5)
+plot(Map$map)
+
+# 3. Interactive dashboard
+biblioshiny()
+```
+
+### Google Scholar Integration Prompt for Related Work
+
+Use this prompt to draft a Related Work section based on a set of papers discovered via Google Scholar (inspired by gpt_academic):
+
+```
+I am writing the Related Work section of a paper on [TOPIC].
+I have collected the following papers from Google Scholar and other sources.
+For each paper, I provide the title, authors, year, and a one-line summary.
+
+Papers:
+1. [Title] ([Authors], [Year]) — [One-line summary]
+2. [Title] ([Authors], [Year]) — [One-line summary]
+...
+
+Please help me:
+1. Group these papers into 3-5 thematic categories
+2. For each category, write a synthesis paragraph that:
+   - Opens with a topic sentence defining the theme
+   - Discusses 3-5 key papers, comparing their approaches
+   - Identifies the shared limitation of this group
+   - Ends with a transition connecting to the next theme or to my work
+3. End the entire section with a summary paragraph that:
+   - States what the collective body of work has achieved
+   - Identifies the specific gap my paper addresses
+   - Explains how my approach differs from prior work
+
+My paper's contribution: [BRIEF DESCRIPTION]
+Target venue: [JOURNAL/CONFERENCE]
+```
+
+### Bibliometric Visualization Prompt
+
+```
+I have exported bibliometric data from [Web of Science / Scopus] for my
+review paper on [TOPIC]. The dataset contains [N] papers from [YEAR RANGE].
+
+Based on VOSviewer/CiteSpace analysis, I found the following:
+- Top keyword clusters: [LIST CLUSTERS]
+- Citation burst keywords: [LIST BURST KEYWORDS WITH YEARS]
+- Most-cited papers: [LIST TOP 5]
+- Main research communities: [DESCRIBE CLUSTERS]
+
+Please help me:
+1. Write an "Analysis of Research Landscape" subsection interpreting these results
+2. Create a narrative explaining the evolution of the field over time
+3. Identify which research fronts are growing vs. declining
+4. Suggest which emerging themes deserve more attention
+5. Draft figure captions for the VOSviewer/CiteSpace visualizations
+```
+
+---
+
 ## References and Further Reading
 
 - Page, M.J., et al. (2021). The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ, 372, n71.

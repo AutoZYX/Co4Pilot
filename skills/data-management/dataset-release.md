@@ -234,14 +234,53 @@ When standard licenses are insufficient:
 7. **Metadata standards:** Does it support your discipline's standards?
 8. **Cost:** Budget for hosting fees if applicable
 
+### Recommended Hosting Platforms in Detail
+
+**Zenodo (zenodo.org)**
+- Operated by CERN; backed by the European Commission. Long-term stability assured.
+- Automatic DOI assignment upon publication; supports concept DOIs for versioned datasets.
+- Free for datasets up to 50 GB per record. Larger datasets can be accommodated via request.
+- Integrates with GitHub: create a release on GitHub and automatically archive to Zenodo with a DOI.
+- Best for: General research data, code archives, supplementary materials.
+- **DOI registration via Zenodo is the simplest way to get a persistent identifier for your dataset.**
+
+**Figshare (figshare.com)**
+- Supports all file types including figures, datasets, videos, and code.
+- Free accounts allow up to 20 GB of private storage and unlimited public storage.
+- Automatic DOI assignment and altmetric tracking.
+- Institutional versions available (many universities have Figshare portals).
+- Best for: Mixed media datasets, individual figures, and supplementary materials.
+
+**DRYAD (datadryad.org)**
+- Focused on research data underlying scientific publications.
+- Integrated with many journals: data can be deposited as part of the manuscript submission process.
+- Charges a data publishing fee (waived for researchers from some institutions).
+- Strong emphasis on data curation: Dryad staff review submissions for quality.
+- Best for: Life sciences and ecology datasets associated with journal publications.
+
+**Google Dataset Search (datasetsearch.research.google.com)**
+- Not a hosting platform but a discovery layer that indexes datasets across the web.
+- Datasets hosted on Zenodo, Figshare, Dryad, and other platforms are automatically indexed.
+- To ensure your dataset is discoverable: include structured metadata (schema.org/Dataset)
+  on your dataset landing page.
+- Best for: Increasing discoverability of datasets hosted elsewhere.
+
+**Nature's Recommended Data Repositories**
+- Nature maintains a curated list of recommended repositories organized by discipline.
+- Using a Nature-recommended repository strengthens the credibility of your dataset.
+- For engineering and computer science: IEEE DataPort, Zenodo, Figshare are listed.
+- For interdisciplinary work: check the full list at nature.com/sdata/policies/repositories.
+- Many journals now require data deposition in a recognized repository as a condition of publication.
+
 ### Multi-Platform Strategy
 
 For maximum discoverability:
-- **Primary host:** One platform for the actual data files (e.g., Zenodo)
-- **Discovery layer:** Register on Google Dataset Search
+- **Primary host:** One platform for the actual data files (e.g., Zenodo for DOI and long-term preservation)
+- **Discovery layer:** Register on Google Dataset Search (automatic if hosted on major platforms)
 - **Community platform:** Mirror on discipline-specific platform (e.g., Hugging Face for ML)
 - **Institutional repository:** Deposit in university's repository for compliance
 - **Project website:** Link to all hosting locations from the project website
+- **Nature-recommended repository:** If publishing in a Nature-family journal, use their recommended repositories
 
 ---
 

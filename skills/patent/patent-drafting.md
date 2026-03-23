@@ -241,6 +241,66 @@ Consider independent claims of different types:
 - Inconsistent reference numerals between drawings and text.
 - Claims that do not match the specification terminology.
 
+## Patent Lifecycle Timeline
+
+### Full Lifecycle: From Invention to Grant
+
+Understanding the complete patent lifecycle helps research groups plan their
+publication, funding, and commercialization activities around patent timelines.
+
+#### Phase 1: Patent Creation (3-16 weeks)
+
+| Stage | Duration | Description |
+|-------|----------|-------------|
+| Technical disclosure drafting | 2-4 weeks | Inventor writes the 技术交底书 with diagrams and examples |
+| Attorney review and questions | 1-2 weeks | Patent attorney reviews disclosure, asks clarifying questions |
+| Claims drafting | 1-2 weeks | Attorney drafts claims based on disclosure and prior art search |
+| Specification writing | 2-4 weeks | Attorney writes full specification with embodiments |
+| Inventor review | 1-2 weeks | Inventor reviews draft for technical accuracy |
+| Revisions and finalization | 1-2 weeks | Final revisions, formal drawings, filing preparation |
+| **Total creation time** | **3-16 weeks** | Varies by complexity and attorney responsiveness |
+
+#### Phase 2: CNIPA Examination Process (Invention Patent 发明专利)
+
+| Stage | Typical Duration | Cumulative Time |
+|-------|-----------------|-----------------|
+| Filing and formalities check | 1-3 months | 1-3 months |
+| Publication (公布) | 18 months from filing (or earlier if requested) | 18 months |
+| Substantive examination request | Must be filed within 3 years | — |
+| Substantive examination | 12-24 months | 30-42 months |
+| Office action(s) response | 4 months per round, typically 1-3 rounds | Variable |
+| Grant or rejection decision | — | **24-48 months total** |
+| **Typical total: filing to grant** | **2-4 years** | |
+
+#### Phase 2 (Alternative): Utility Model (实用新型专利)
+
+| Stage | Typical Duration | Cumulative Time |
+|-------|-----------------|-----------------|
+| Filing and formalities check | 1-2 months | 1-2 months |
+| Preliminary examination (no substantive exam) | 4-8 months | 5-10 months |
+| Grant | — | **6-12 months total** |
+
+### Critical Pre-Filing Rule
+
+**The patent application MUST be filed and the 受理通知书 (Filing Receipt / Notice
+of Acceptance) MUST be received BEFORE any form of public disclosure.** This
+includes but is not limited to:
+
+- Journal paper submission (even if not yet published, some journals share with reviewers)
+- Conference paper submission (camera-ready or abstract)
+- Conference presentation, poster session, or workshop talk
+- Thesis defense (if the thesis is publicly accessible)
+- Preprint posting (arXiv, SSRN, bioRxiv)
+- Press releases, blog posts, or social media disclosures
+- Product demonstrations, trade shows, or investor pitches
+- Public GitHub repositories or open-source code releases
+
+**Planning implication:** Work backward from your planned publication date.
+If you plan to submit a paper by a certain date, the patent filing must be
+completed and the 受理通知书 received before that date. With a creation timeline
+of 3-16 weeks, start the patent process at least 2-4 months before the target
+publication date.
+
 ## Filing Strategies
 
 ### Provisional vs. Non-Provisional (US)

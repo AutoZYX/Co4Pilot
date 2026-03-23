@@ -245,6 +245,62 @@ This skill guides the creation, maintenance, and strategic use of academic CVs. 
 - Track who reads and cites your work
 - Connect with co-authors and collaborators
 
+### Publish or Perish (Citation Analysis Tool)
+
+**Publish or Perish** is a free desktop software tool that retrieves and
+analyzes academic citations. Essential for CV maintenance and career development:
+
+- **What it does:** Queries Google Scholar, Scopus, Web of Science, and
+  Crossref to calculate citation metrics for any researcher or paper set.
+- **Key metrics computed:** h-index, g-index, e-index, age-weighted citation
+  rate (AWCR), individual h-index (hI-index), citations per paper, citations
+  per author, and more.
+- **Use cases for CV maintenance:**
+  1. Generate a comprehensive citation report for your promotion dossier.
+  2. Compare your metrics against field benchmarks.
+  3. Identify your most-cited papers for "representative works" selections.
+  4. Track citation growth over time for annual reports.
+  5. Prepare citation summaries for talent program applications.
+- **Download:** Free from harzing.com/resources/publish-or-perish
+- **Tip:** Export results to CSV/BibTeX for inclusion in reports. Run the
+  analysis quarterly and save snapshots to track your trajectory.
+
+### Comprehensive Online Presence Strategy
+
+Maintain a consistent, up-to-date presence across these platforms:
+
+| Platform | Priority | Update Frequency | Key Action |
+|----------|----------|-----------------|------------|
+| ORCID | Essential | Every publication | Link all papers, grants, affiliations |
+| Google Scholar | Essential | Monthly | Merge duplicates, remove errors, update affiliation |
+| ResearchGate | Recommended | Quarterly | Upload preprints, answer questions |
+| Personal Website | Recommended | Quarterly | Feature current projects and latest papers |
+| Institutional Page | Required | Annually | Keep photo, bio, and publication list current |
+| Scopus Author ID | Recommended | Check annually | Merge fragmented profiles |
+| Web of Science Researcher Profile | Recommended | Check annually | Claim and verify publications |
+
+**Google Scholar Profile Optimization:**
+- Use a professional photo (increases profile click-through).
+- Select 5-7 research interest keywords strategically: mix broad terms
+  (for discoverability) with specific terms (for expert recognition).
+- Set up citation alerts for your own papers and key competitors.
+- Review the "co-authors" section for accuracy.
+- Periodically search for your name variants to find unlinked papers.
+
+**ORCID Best Practices:**
+- Enable auto-update with Crossref and DataCite so new publications
+  and datasets are added automatically.
+- Include your ORCID iD on all paper submissions, grant applications,
+  and in your email signature.
+- Link your ORCID to Scopus, Web of Science, and institutional systems.
+- Use ORCID as the single authoritative source for your publication record.
+
+**ResearchGate Tips:**
+- Upload author-accepted manuscripts (respecting publisher embargo periods).
+- Respond to questions in your area of expertise to increase visibility.
+- Track who reads and cites your work through ResearchGate analytics.
+- Use ResearchGate's recommendation system to discover related work.
+
 ### Personal Academic Website
 - Host a curated version of your CV
 - Include downloadable papers (when copyright allows)

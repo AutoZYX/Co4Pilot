@@ -246,6 +246,93 @@ For natural sciences and engineering (approximate):
 - "What is the practical significance of your theoretical contributions?"
 - "How do you train and mentor students?"
 
+## Faculty Application and Career Development Resources
+
+### Yisong Yue's Faculty Application Checklist
+
+For students and postdocs preparing for academic job applications, this
+comprehensive checklist covers every aspect of the process:
+
+**Materials Preparation (12+ months before applications due):**
+- [ ] Research statement (3-5 pages): Your past contributions and future vision
+- [ ] Teaching statement (1-2 pages): Teaching philosophy, courses you can teach
+- [ ] Diversity statement (1-2 pages): Your commitment to inclusive mentoring
+- [ ] CV: Comprehensive, formatted per academic conventions
+- [ ] Cover letter template: Customizable for each institution
+- [ ] Representative papers: Select 3-5 that tell a coherent research story
+- [ ] Talk slides: Job talk prepared and practiced (45-60 minutes)
+
+**Reference Letters (6+ months before):**
+- [ ] Identify 4-6 letter writers (mix of advisor, committee, collaborators, external)
+- [ ] Provide each writer with your CV, research statement, and target positions
+- [ ] Give writers at least 6 weeks before the first deadline
+- [ ] Follow up 2 weeks before each deadline with a gentle reminder
+
+**Application Timeline:**
+- [ ] August-September: Finalize all materials; identify target positions
+- [ ] October-December: Submit applications (most US deadlines fall here)
+- [ ] January-March: Interview season (phone/video screens, then campus visits)
+- [ ] March-April: Offers and negotiations
+- [ ] For Chinese positions: timeline varies; spring and fall recruitment cycles
+
+**Job Talk Preparation:**
+- [ ] 45-minute talk with clear narrative arc
+- [ ] Practice at least 5 times with different audiences
+- [ ] Prepare for 15-30 minutes of questions
+- [ ] Have backup slides for anticipated deep-dive questions
+- [ ] Research the department and mention potential collaborations
+- [ ] Prepare a 5-minute "elevator pitch" version for informal meetings
+
+### Phil Agre's Guide to Professional Networking
+
+Phil Agre's guide to networking in academia remains one of the most practical
+resources for building professional relationships. Key principles:
+
+**The Core Insight: Networking is About Giving, Not Taking**
+- Offer to help others before asking for anything.
+- Share papers, resources, connections, and opportunities generously.
+- Build relationships over months and years, not at the moment you need something.
+
+**Practical Networking Actions:**
+
+1. **Conference Networking:**
+   - Attend the same conferences consistently (builds recognition over years).
+   - Prepare 2-3 specific questions for speakers whose work interests you.
+   - Introduce yourself after talks with a concrete connection to your own work.
+   - Follow up within 1 week with an email referencing your conversation.
+   - Organize or participate in conference social events.
+
+2. **Email Networking:**
+   - When emailing a researcher you do not know, lead with why you are writing
+     (specific connection to their work, not a generic introduction).
+   - Keep initial emails short (under 200 words).
+   - Attach your most relevant paper if appropriate.
+   - Do not ask for favors in the first email; establish the connection first.
+   - Follow up on promising connections with occasional updates about your work.
+
+3. **Maintaining Your Network:**
+   - Send occasional updates to key contacts (2-3 times per year).
+   - Share relevant papers, job postings, or opportunities with contacts.
+   - Congratulate contacts on their achievements (papers, awards, promotions).
+   - Invite contacts to give talks or collaborate when appropriate.
+   - Keep a contact management system (even a simple spreadsheet) to track
+     when you last communicated with key contacts.
+
+4. **Building Visibility:**
+   - Volunteer for conference organization (session chair, reviewer, local arrangements).
+   - Write thoughtful reviews when invited (builds reputation with editors).
+   - Give talks at other institutions (ask your network for invitations).
+   - Participate in professional society activities.
+   - Be active on academic social media (LinkedIn, ResearchGate) with
+     substantive contributions, not just self-promotion.
+
+**For Chinese Academic Context:**
+- Attend domestic conferences (SAE-China, CSAE) to build local networks.
+- Join relevant academic societies and participate in their activities.
+- Accept reviewer and committee invitations when feasible.
+- Cultivate relationships with peers at partner institutions.
+- Leverage WeChat academic groups for informal knowledge exchange.
+
 ## International Equivalents
 
 ### Tenure and Promotion (US/UK/Australia)

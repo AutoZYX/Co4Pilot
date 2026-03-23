@@ -458,6 +458,106 @@ ADVISOR COMMENTS:
 
 ---
 
+## Essential PhD Resources and Reading List
+
+### Application and Admission
+
+These resources help prospective and early-stage PhD students navigate the
+application process and set expectations:
+
+- **cs-sop.org**: Curated collection of successful Statements of Purpose (SOP)
+  for computer science PhD programs. Useful as reference examples for students
+  writing their own SOPs, even in adjacent fields like automotive engineering.
+  Shows the range of styles and approaches that lead to admission.
+
+- **Mor Harchol-Balter — "Applying to Ph.D. Programs in Computer Science"**:
+  Comprehensive guide covering every aspect of the application process.
+  Particularly valuable for understanding what admission committees actually
+  look for. Covers research experience, recommendation letters, and the
+  "fit" concept. Relevant beyond CS to all STEM fields.
+
+- **Tim Dettmers — "Machine Learning PhD Applications: Everything You Need to Know"**:
+  Detailed guide focused on ML/AI PhD applications but broadly applicable
+  to computational research fields. Covers how to identify good advisors,
+  evaluate programs, and write effective research statements.
+
+### Research Methods and Productivity
+
+- **S. Keshav — "How to Read a Paper" (Three-Pass Method)**:
+  The canonical guide on efficient paper reading. The three-pass approach:
+  1. First pass (5-10 min): Read title, abstract, introduction, section headings,
+     conclusions. Decide if the paper is worth deeper reading.
+  2. Second pass (1 hour): Read the paper with greater care but skip proofs
+     and details. Grasp the key ideas, supporting arguments, and figures.
+  3. Third pass (4-5 hours): Virtually re-implement the paper. Understand
+     every assumption, identify weaknesses, and note potential improvements.
+  Students should practice this method from Year 1 and use it consistently.
+
+- **Bill Freeman — "How to Write a Good CVPR Submission"**:
+  While focused on computer vision, the principles apply to any top-tier
+  venue submission. Covers paper structure, figure design, writing clarity,
+  and the review process. Essential reading before a student's first
+  conference paper submission.
+
+### PhD Survival and Mental Health
+
+These resources address the human side of doctoral education — managing stress,
+maintaining motivation, and navigating the social dynamics of academia:
+
+- **Ronald Azuma — "So Long, and Thanks for the PhD"**:
+  Classic, informal guide covering the entire PhD experience. Chapters on
+  advisor relationships, time management, the qualifying exam, and thesis
+  writing. Written with humor and hard-won wisdom. Every new PhD student
+  should read this in their first semester.
+
+- **Andrej Karpathy — "A Survival Guide to a PhD"**:
+  Short, practical guide from a successful ML researcher. Covers topic
+  selection ("pick a topic that is both important and underexplored"),
+  managing the advisor relationship, dealing with failure, and the importance
+  of building a community. Key insight: the PhD is about learning to do
+  research, not about producing a specific result.
+
+- **Mark Dredze and Hal Daumé III (originally Dredze/Wallach) — "How to be a Successful PhD Student"**:
+  Practical advice on productivity habits, reading strategies, maintaining
+  work-life balance, and navigating the advisor relationship. Includes
+  concrete weekly and semester planning frameworks.
+
+### Academic Career Preparation
+
+- **Yisong Yue — "Faculty Application Checklist"**:
+  Detailed checklist for academic job market preparation. Covers the
+  research statement, teaching statement, application timeline, and
+  interview preparation. Useful for students considering academic careers
+  to start preparing 1-2 years before graduation.
+
+- **Phil Agre — "Networking on the Network"**:
+  Guide to building professional relationships in academia. Covers
+  attending conferences, writing effective emails to researchers you
+  want to connect with, and building a professional reputation. The
+  principles apply whether networking in-person or online.
+
+### Recommended Reading Schedule for PhD Students
+
+| Year | Resources to Read | Purpose |
+|------|------------------|---------|
+| Year 1 (start) | Azuma's "So Long, and Thanks for the PhD" | Set expectations and mindset |
+| Year 1 (start) | Keshav's "How to Read a Paper" | Build efficient reading habits |
+| Year 1-2 | Karpathy's "A Survival Guide to a PhD" | Topic selection and motivation |
+| Year 2 | Dredze/Wallach's "How to be a Successful PhD Student" | Productivity habits |
+| Year 2-3 | Freeman's "How to Write a Good CVPR Submission" | Before first paper submission |
+| Year 3-4 | Agre's "Networking on the Network" | Build professional network |
+| Year 4-5 | Yue's "Faculty Application Checklist" | If pursuing academic career |
+
+### Sharing with Students
+
+Advisors should:
+- Share the Azuma and Karpathy guides with every new PhD student in their first month
+- Assign the Keshav three-pass reading method as mandatory training
+- Discuss the Dredze/Wallach productivity frameworks during regular meetings
+- Point students toward career resources 1-2 years before expected graduation
+
+---
+
 ## Prompt Templates for Claude
 
 ### Generate Student Feedback

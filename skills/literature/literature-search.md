@@ -270,6 +270,42 @@ You have likely achieved search saturation when:
 
 ---
 
+## Paper Discovery Platforms
+
+Beyond traditional databases, these specialized platforms help discover relevant papers through different mechanisms.
+
+### Discovery Tools
+
+| Tool | URL | Discovery Method | Best For |
+|------|-----|-----------------|----------|
+| **dblp** | dblp.org | Complete CS bibliography; author/venue browsing | Finding all papers by an author or at a venue. No abstracts, but exhaustive metadata for CS. |
+| **Semantic Scholar** | semanticscholar.org | AI-powered relevance ranking, TLDR summaries, influence scores | Large-scale discovery with automated paper summaries. Free API for programmatic access. |
+| **Papers With Code** | paperswithcode.com | Links papers to code repositories, benchmarks, and leaderboards | Finding implementations, comparing SOTA results on benchmarks. |
+| **Paper Digest** | paper-digest.com | AI-generated paper digests and trend reports | Quick summaries of recent papers in specific areas. |
+| **Cool Papers** | papers.cool | Curated daily paper recommendations with Chinese summaries | Staying current with trending AI/ML papers; popular in Chinese research community. |
+| **Connected Papers** | connectedpapers.com | Visual citation graph from a seed paper | Mapping related work around a specific paper. Free for 5 graphs/month. |
+| **ResearchRabbit** | researchrabbit.ai | Continuous recommendation based on your collection | Ongoing discovery; add papers and get recommendations automatically. Integrates with Zotero. |
+| **Inciteful** | inciteful.xyz | Network analysis from seed papers | Finding important papers you missed; identifying bridge papers between fields. |
+| **Google Scholar** | scholar.google.com | Broad full-text search, citation tracking | Initial exploration, citation chasing, alert setup. |
+| **arXiv** | arxiv.org | Preprint repository with daily listings | Accessing cutting-edge work before peer review. |
+| **ChinaXiv** | chinaxiv.org | Chinese preprint repository | Chinese-language preprints across disciplines. |
+
+### Connected Papers: Citation Graph Exploration
+
+Connected Papers builds a visual similarity graph around a seed paper. Papers are positioned based on co-citation and bibliographic coupling (not direct citation).
+
+**How to use effectively**:
+1. Start with your most relevant seed paper
+2. The resulting graph shows papers similar in topic, even if they don't directly cite each other
+3. Papers closer together are more similar; paper size indicates citation count
+4. Use the "Prior works" tab to find foundational papers
+5. Use the "Derivative works" tab to find recent follow-ups
+6. Build multiple graphs from different seed papers to cover different angles
+
+**Limitation**: Only indexes papers with DOIs in Semantic Scholar. May miss workshop papers, Chinese-language papers, or very recent preprints.
+
+---
+
 ## Search Alert Setup
 
 ### Google Scholar Alerts
@@ -282,10 +318,29 @@ You have likely achieved search saturation when:
 2. Set up email alerts for new results
 3. Set frequency to weekly for active topics, monthly for stable fields
 
+### Semantic Scholar Alerts
+1. Create an account at semanticscholar.org
+2. Set up a Research Feed based on your interests
+3. Follow specific authors to get notified of new publications
+4. Use the "Research Feed" feature for personalized daily recommendations
+5. API access: `api.semanticscholar.org` for programmatic alerts and batch queries
+
+### Papers With Code Alerts
+1. Follow specific benchmarks/tasks (e.g., "Object Detection on KITTI")
+2. Get notifications when new SOTA results are reported
+3. Subscribe to specific topics or methods via the "Subscribe" button
+
+### arXiv Alerts
+1. Subscribe to specific categories (e.g., cs.CV, cs.RO, cs.AI)
+2. Use arxiv-sanity-lite (arxiv-sanity-lite.com) for personalized arXiv filtering
+3. Use daily email digests: set up at arxiv.org/help/subscribe
+4. Third-party tools: Arxiv Daily (arxivdaily.com) provides Chinese summaries of trending papers
+
 ### RSS / Table of Contents
 - Subscribe to TOC alerts for key journals via journal websites
 - Use RSS readers (Feedly, Inoreader) to aggregate multiple journal feeds
 - Set Google Scholar alerts for key authors in your field
+- Use IFTTT or Zapier to route alerts to Slack/WeChat for team awareness
 
 ---
 

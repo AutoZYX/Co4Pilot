@@ -244,6 +244,85 @@ Use transitional sentences to connect sections:
 - Use color coding consistently across figures.
 - Annotate figures to highlight innovation points.
 
+## The 8-Component Proposal Framework
+
+This framework, widely adopted in competitive proposal writing, organizes a
+research proposal into eight essential components. Each component serves a
+specific function in building the reviewer's confidence.
+
+### Component 1: Introduction — Set the Stage
+- Introduce the topic clearly and concisely.
+- Establish motivation: why does this research matter right now?
+- Provide a brief preview of your proposed approach (1-2 sentences).
+- The introduction should make the reviewer want to keep reading.
+
+### Component 2: Scope — Be Very Specific
+- Define the boundaries of your project precisely.
+- State rough research questions that guide the investigation.
+- **Principle: "Less is more."** A tightly scoped proposal is more convincing
+  than an ambitious one that tries to cover too much ground.
+- Avoid vague scope statements like "explore various aspects of X."
+- Instead: "We will investigate the specific effect of Y on Z under conditions W."
+
+### Component 3: Background — Demonstrate Your Qualifications
+- Highlight your relevant research experience.
+- Emphasize transferable skills: team management, experimental design,
+  data visualization, and scientific writing.
+- Show that you have the skills to execute the proposed work, not just
+  conceive of it.
+- Include evidence of collaboration and interdisciplinary capability.
+
+### Component 4: Theme — Find ONE Overarching Theme
+- **This is the most critical component for coherence.**
+- Every proposal should have ONE overarching theme that ties all elements together.
+- The theme is the "big idea" or "central thesis" that unifies your objectives,
+  methodology, and expected outcomes.
+- Ask yourself: "If a reviewer remembers only one thing about my proposal,
+  what should it be?" That is your theme.
+- All research questions, tasks, and innovations should connect back to this theme.
+- A proposal without a clear theme reads as a collection of disconnected tasks.
+
+### Component 5: Contributions — Focus on YOUR Work
+- Clearly articulate what YOU will specifically contribute.
+- Distinguish your contributions from what already exists in the literature.
+- Avoid generic contribution statements ("advance the field").
+- Instead: "We will provide the first comprehensive dataset of X under Y conditions,
+  enabling future research on Z."
+- Each contribution should be testable and verifiable.
+
+### Component 6: Methodologies — Problem + Data + Methods + Experiments
+- Structure each methodology section around four elements:
+  1. **Problem definition**: What specific question does this task address?
+  2. **Data collection**: What data will be gathered and how?
+  3. **Methods**: What analytical or computational methods will be applied?
+  4. **Experiments**: How will results be validated and evaluated?
+- Provide enough detail for a reviewer to assess feasibility.
+- Reference established methods and justify novel ones.
+
+### Component 7: Timeline and Project Management
+- Provide rough time estimates for each major task.
+- Mention known constraints (equipment access, data availability, student availability).
+- Show that you have thought about dependencies between tasks.
+- Include buffer time (10-15%) for unexpected delays.
+- A Gantt chart or milestone table is preferred over narrative descriptions.
+
+### Component 8: Future Goals — Express Your Vision
+- Articulate what you want to achieve through this research experience.
+- Connect the proposed work to your longer-term research agenda.
+- Show how the outcomes will enable future projects or directions.
+- For student proposals: express what skills and knowledge you want to gain.
+- For faculty proposals: show how this builds your research program.
+
+### Applying the Framework
+
+When writing a proposal, start by defining your **ONE overarching theme**
+(Component 4) and your **specific contributions** (Component 5). These two
+components anchor the entire document. Then build the other components around
+them, ensuring every section connects back to the theme.
+
+**Self-test:** After drafting, read only the first sentence of each section.
+If those sentences alone tell a coherent story, your proposal has good structure.
+
 ## Common Mistakes to Avoid
 
 1. **Proposal by accumulation**: Listing many unconnected tasks instead of telling
