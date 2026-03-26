@@ -1,4 +1,4 @@
-# Peer Reviewer Agent
+# Paper Reviewer Agent
 
 > Status: Under Development
 
@@ -14,9 +14,9 @@ An agent that simulates expert peer review of manuscripts. Provides constructive
 - Editor correspondence
 
 ## Skills Used
-- `peer-review/review-writing.md`
-- `peer-review/editor-communication.md`
-- `literature/paper-reading.md`
+- `paper/review/review-writing.md`
+- `paper/review/editor-communication.md`
+- `paper/literature/paper-reading.md`
 
 ## Usage
 Invoke this agent when you need to:

@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-# install.sh - Install Academic Research Claude Code Agents
+# install.sh - Install Co4Pilot (4P Academic Research Skills)
 # Uses append-only pattern to avoid overwriting existing configurations.
-# All items are installed with "academic-" prefix to prevent conflicts.
+# All items are installed with "co4pilot-" prefix to prevent conflicts.
 
 set -euo pipefail
 
 # --- Configuration ---
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PREFIX="academic-"
+PREFIX="co4pilot-"
 
 # Claude Code directories
 CLAUDE_DIR="${HOME}/.claude"
@@ -30,8 +30,8 @@ NC='\033[0m' # No Color
 print_header() {
     echo ""
     echo -e "${BLUE}============================================${NC}"
-    echo -e "${BLUE}  Academic Research Claude Code Agents${NC}"
-    echo -e "${BLUE}  Installer v1.0${NC}"
+    echo -e "${BLUE}  Co4Pilot - 4P Academic Research Skills${NC}"
+    echo -e "${BLUE}  Installer v2.0${NC}"
     echo -e "${BLUE}============================================${NC}"
     echo ""
 }
@@ -195,7 +195,7 @@ do_install() {
 
 do_uninstall() {
     echo ""
-    print_info "Uninstalling Academic Research Claude Code Agents..."
+    print_info "Uninstalling Co4Pilot skills..."
     echo ""
 
     # Remove prefixed skill directories
@@ -261,8 +261,8 @@ case "${1:-}" in
         echo "Usage: bash install.sh [OPTIONS]"
         echo ""
         echo "Options:"
-        echo "  (none)          Install academic research agents"
-        echo "  --uninstall, -u Uninstall academic research agents"
+        echo "  (none)          Install Co4Pilot skills and agents"
+        echo "  --uninstall, -u Uninstall Co4Pilot skills and agents"
         echo "  --help, -h      Show this help message"
         ;;
     *)

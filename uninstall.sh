@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# uninstall.sh - Uninstall Academic Research Claude Code Agents
+# uninstall.sh - Uninstall Co4Pilot skills and agents
 # Convenience wrapper around install.sh --uninstall
 
 set -euo pipefail
