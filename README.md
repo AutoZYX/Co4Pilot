@@ -113,7 +113,7 @@ The 4P framework provides universal academic skills. **Domain extensions** layer
 
 | Domain | Skills | Contributor | Focus |
 |--------|--------|------------|-------|
-| **AD Safety** | 10 | [Dr. Wang Cheng](https://github.com/RoboSafe-Lab) (Northumbria University) | SOTIF, scenario testing, safety assurance, V&V, foundation models for AD |
+| **AD Safety** | 10 | [Dr. Wang Cheng](https://github.com/RoboSafe-Lab) | SOTIF, scenario testing, safety assurance, V&V, foundation models for AD |
 
 See [skills/domains/README.md](skills/domains/README.md) for the full list and contribution guide.
 
