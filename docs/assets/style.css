@@ -151,14 +151,20 @@ section:last-of-type {
 }
 
 .hero h1 {
-  margin-bottom: 8px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 8vw;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 18px;
 }
 
 .tagline {
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.6;
-  max-width: 640px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
