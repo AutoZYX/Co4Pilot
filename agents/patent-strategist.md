@@ -17,12 +17,14 @@ An agent for end-to-end patent lifecycle management. From mining patentable idea
 - `patent/patent-mining.md`
 - `patent/disclosure.md`
 - `patent/patent-drafting.md`
+- `patent/patent-drawing.md` — 专利附图绘制（v2.0，基于 10 篇已授权 AD/AI 专利蒸馏）
 - `patent/office-action.md`
 
 ## Usage
 Invoke this agent when you need to:
 - Identify patentable innovations from recent research
 - Draft a patent application from technical results
+- Draw patent figures (flowcharts, architecture, scene diagrams, etc.)
 - Respond to a patent office action
 - Plan a patent filing strategy
 
