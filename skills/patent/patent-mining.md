@@ -145,6 +145,33 @@ Published research papers often contain patentable innovations, but the paper an
 
 **Critical Warning:** If the paper is already published, the invention has been publicly disclosed. You must file within 6 months of publication (under Chinese grace period provisions, which apply only in limited circumstances — conference presentations at recognized academic conferences or first publication). Best practice is always to file BEFORE publication.
 
+### Domain Add-On: AI / Autonomous Systems Pipeline Mining
+
+AI and autonomous-systems patents are often strongest when the invention is not
+"a model" but a technical pipeline tied to a measurable system effect. Mine the
+pipeline at five levels:
+
+| Level | Patent-mining question | Candidate claim angle |
+|-------|------------------------|-----------------------|
+| Data | What raw signals, logs, scenes, maps, labels, or events are transformed? | acquisition, synchronization, filtering |
+| Physics / constraints | What domain constraints make the processing technical? | kinematics, geometry, road network, equipment limits |
+| Indicators | What measurable features or risk/quality indicators are derived? | formula set, normalization, invalid-value handling |
+| Decision logic | How are indicators fused, classified, weighted, or calibrated? | scoring, thresholding, adaptive parameters |
+| Output | What technical artifact is generated or controlled? | scenario, test case, report, control command, alert |
+
+Good candidates have coupling across multiple levels. Weak candidates often
+depend on a generic model, a generic score, or a business rule without a
+technical artifact or physical constraint.
+
+Use this quick filter:
+
+1. If the same method could be moved to finance or marketing by renaming columns,
+   the technical coupling is probably weak.
+2. If a physical constraint, sensor property, simulation standard, or machine
+   state changes the method itself, the coupling is stronger.
+3. If the output can be executed, replayed, verified, controlled, or audited by
+   a technical system, the patent angle is stronger than a dashboard-only result.
+
 ---
 
 ## Patent Mining Workshop Template

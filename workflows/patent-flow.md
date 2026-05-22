@@ -24,8 +24,20 @@ End-to-end workflow from identifying patentable innovations to securing granted 
 
 ### Stage 4: Patent Drafting
 - **Agent**: `patent-strategist`
-- **Activities**: Draft claims, specification, drawings descriptions, abstract
+- **Activities**: Draft claims, specification, drawings descriptions, abstract.
+  For AI, software, and autonomous-systems inventions, explicitly check whether
+  each algorithmic step is coupled to a technical input, constraint, output, or
+  effect. Keep the claim set compact when the filing strategy or fee schedule
+  requires it.
 - **Deliverable**: Complete patent application draft
+
+### Stage 4.5: Public-Safe Knowledge Transfer
+- **Agent**: `patent-strategist`
+- **Activities**: If lessons from a real matter are being added back into
+  Co4Pilot, remove private names, paths, unfiled claim text, attorney comments,
+  exact unpublished data, and internal case codes. Keep only reusable workflows,
+  checklists, templates, and generalized examples.
+- **Deliverable**: Sanitized skill update or internal note
 
 ### Stage 5: Filing & Prosecution
 - **Agent**: `patent-strategist`

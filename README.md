@@ -4,13 +4,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude-Code-blueviolet)](https://claude.ai)
-[![Skills](https://img.shields.io/badge/Core_Skills-45-green)](./skills/)
+[![Skills](https://img.shields.io/badge/Core_Skills-46-green)](./skills/)
 
 **🌐 Website | 在线浏览：** [autozyx.github.io/Co4Pilot](https://autozyx.github.io/Co4Pilot)
 
 ## What is Co4Pilot?
 
-**Co4Pilot** is an AI-powered copilot that covers the complete academic research lifecycle through four pillars -- the **4P Framework**. Built on [Claude Code](https://claude.ai), it provides 45 actionable skill files with frameworks, templates, checklists, and prompt templates sourced from MIT, Stanford, Harvard, CMU, and other top universities' best practices.
+**Co4Pilot** is an AI-powered copilot that covers the complete academic research lifecycle through four pillars -- the **4P Framework**. Built on [Claude Code](https://claude.ai), it provides 46 actionable skill files with frameworks, templates, checklists, and prompt templates sourced from MIT, Stanford, Harvard, CMU, and other top universities' best practices.
 
 ## The 4P Framework
 
@@ -19,8 +19,8 @@
 | **People** | mentoring (5), teaching (4), career (3), team management (1) | **13** | Student supervision, course design, career development, lab management |
 | **Project** | proposal (4), execution (4), data management (4) | **12** | Grant writing, project reports, budgets, research data |
 | **Paper** | literature (4), writing (6), review (2), impact (4) | **16** | Literature research, paper composition, peer review, dissemination |
-| **Patent** | mining, disclosure, drafting, office action | **4** | Invention mining, IP protection, patent prosecution |
-| | | **45 total** | |
+| **Patent** | mining, disclosure, drafting, drawing, office action | **5** | Invention mining, IP protection, patent prosecution |
+| | | **46 total** | |
 
 ## Architecture
 
@@ -85,10 +85,11 @@ Co4Pilot
 |   |       +-- invited-talk              Assertion-Evidence slides, Q&A
 |   |       +-- media-interview           Message triangle, bridging
 |   |
-|   +-- patent/                       Patent (4 skills)
-|   |   +-- patent-mining                 5 mining methods, portfolio strategy
-|   |   +-- disclosure                    Timing rules, TTO process
-|   |   +-- patent-drafting               Claims, specification, PCT strategy
+|   +-- patent/                       Patent (5 skills)
+|   |   +-- patent-mining                 5 mining methods + AI pipeline mining
+|   |   +-- disclosure                    Timing rules, TTO process, AI disclosure checklist
+|   |   +-- patent-drafting               Claims, specification, AI/software support
+|   |   +-- patent-drawing                Patent figures and risk-distribution layouts
 |   |   +-- office-action                 US/CN/EP rejection responses
 |   |
 |   +-- domains/                      Domain Extensions
@@ -154,7 +155,7 @@ Every skill file contains 200-500 lines of substantive content:
 - **Quality checklists** to catch common mistakes
 - **Tool recommendations** with specific setup guides
 
-Total: **45 core skills + 10 domain skills = 55 skill files.**
+Total: **46 core skills + 10 domain skills = 56 skill files.**
 
 ## Credits
 

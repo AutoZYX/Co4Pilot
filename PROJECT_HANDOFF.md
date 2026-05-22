@@ -1,6 +1,6 @@
 # Academic Research Agents — 项目交接文档
 
-> 最后更新：2026-03-23
+> 最后更新：2026-05-22
 > 项目地址：https://github.com/zyx312/academic-research-agents
 > 作者：张玉新，吉林大学汽车工程学院教授
 
@@ -22,7 +22,7 @@
 
 | 组件 | 数量 | 行数 | 状态 |
 |------|------|------|------|
-| **Skills（技能文件）** | 44个，11个类别 | 18,969行 | ✅ 全部填充了深度内容 |
+| **Skills（技能文件）** | 46个核心技能 + 10个领域技能 | 以仓库实际文件为准 | ✅ 专利技能已补入脱敏后的 AI/自动驾驶场景经验 |
 | **Agents（智能体）** | 11个 | ~200行 | ⚠️ 仍为模板，需写系统Prompt |
 | **Workflows（工作流）** | 5个 | ~100行 | ⚠️ 仍为模板，需深化 |
 | **Commands（命令）** | 目录已建 | — | ❌ 未开始 |
@@ -42,7 +42,7 @@
 | literature/ | 4 | ~1,700 | PRISMA, Keshav三遍法, Zotero高级配置, 12个数据库检索语法 |
 | paper-writing/ | 6 | ~2,700 | Simon Peyton Jones, Stanford Widom, gpt_academic Prompt, CALM rebuttal |
 | peer-review/ | 2 | ~700 | 结构化评审模板, 编辑沟通策略 |
-| patent/ | 4 | ~1,550 | 五种挖掘法, CNIPA完整时间线, 权利要求书 |
+| patent/ | 5 | 以仓库实际文件为准 | 专利挖掘、交底书、权利要求撰写、专利附图、审查意见答复；已补入脱敏后的 AI/软件/自动驾驶专利规则 |
 | proposal/ | 4 | ~1,550 | 通用8组件框架, 横向课题合同, ACE答辩法 |
 | student-mentoring/ | 5 | ~2,300 | IDP, 本科28周/硕士2-3年/博士4-5年时间线, PhD生存指南 |
 | project-execution/ | 4 | ~1,700 | 风险矩阵, 预算合规, 审计自查清单 |

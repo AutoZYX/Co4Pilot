@@ -142,6 +142,36 @@ The description must be clear enough for a skilled person to reproduce.
 
 Claims must be supported by the description. Amend to align with disclosure.
 
+### AI / Software / Algorithm Rejection Strategy
+
+When an examiner treats an AI, software, or statistical method as a generic
+algorithm, shift the response from "the math is clever" to "the claim solves a
+technical problem through technical means and produces a technical effect."
+
+Useful response structure:
+
+1. Identify the concrete technical problem: noisy sensor data, inconsistent
+   trajectories, insufficient test coverage, unstable detection, unsafe control,
+   simulation mismatch, or unavailable verification evidence.
+2. Point to the technical means in the claim: data acquisition source,
+   preprocessing, physical constraints, feature definitions, calibration,
+   thresholding, generated technical artifact, or system execution.
+3. Explain the technical effect: improved physical consistency, reduced false
+   positives, reproducible scenario generation, better coverage, lower computing
+   load, safer triggering, or more reliable validation.
+4. Distinguish cited art by the coupled pipeline, not by isolated labels. A
+   prior-art "risk score" is not necessarily the same as a physically constrained
+   indicator pipeline that generates executable test artifacts.
+5. If amendment is needed, add the smallest supported feature that ties the
+   algorithm to the technical environment or output.
+
+Avoid these weak arguments:
+
+- "The model is AI, therefore it is technical."
+- "The formula is different" without explaining technical effect.
+- "The dataset is larger" without showing why the claimed processing changes.
+- "The result is more accurate" without linking accuracy to a claim feature.
+
 ### European Patent Law (EPO)
 
 #### Article 54 - Novelty

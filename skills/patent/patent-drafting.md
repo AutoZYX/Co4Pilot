@@ -8,6 +8,49 @@ European patents (EPO), and PCT international applications. This skill covers th
 structure, strategy, and craft of writing patent documents that provide maximum
 protection for your inventions.
 
+## AI / Software / Autonomous Systems Drafting Defaults
+
+These defaults are distilled from repeated attorney-draft review cycles for
+AI, software, data-driven testing, and autonomous-systems inventions. They are
+written in public-safe form: no private project names, file paths, datasets,
+unfiled claim text, or attorney comments should be copied into this project.
+
+- Keep the claim set compact when the client or institution has fee constraints.
+  If asked to stay within 10 claims, prefer one independent method claim plus
+  carefully chosen dependent claims and one system/device claim.
+- Do not broadly rewrite an attorney's claim set unless explicitly asked.
+  Prefer small claim-language upgrades that expand scope while preserving
+  allowance probability.
+- Use wording such as "at least includes", "preferred reference value",
+  "calibratable based on operating domain / object type / speed range / expert
+  labels", and "at least one threshold or a combination condition".
+- Put specific values in the specification as examples, preferred baselines, or
+  embodiments, not as the only possible implementation.
+- For attorney drafts, preserve Word formatting and use tracked revisions or
+  comments where requested.
+- For standard-format outputs such as OpenSCENARIO, OpenDRIVE, FMI/FMU, ROS,
+  or AUTOSAR artifacts, verify the current official standard pages before
+  writing a version or file-extension statement.
+- For distribution/risk-level patent figures, use a three-layer drawing:
+  top threshold/confidence labels, middle distribution chart, bottom risk band,
+  with no text overlapping bars, curves, axes, or vertical lines.
+
+### Public-Safe Transfer Rules
+
+When converting real case experience into this public project:
+
+- Replace concrete customer, inventor, case, and attorney names with role-based
+  terms such as "inventor", "attorney", "testing platform", or "dataset".
+- Replace exact unpublished sample sizes, thresholds, weights, cities, time
+  windows, and benchmark values with placeholders or ranges unless already
+  public.
+- Remove local file paths, cloud drive links, comments, revision IDs, and
+  internal project codes.
+- Keep reusable patterns: claim architecture, disclosure checklists, figure
+  layout rules, validation steps, and wording strategies.
+- Do not include unfiled claims, examiner arguments, confidential prior-art
+  mappings, or data tables from a live patent matter.
+
 ## Patent Document Structure
 
 A complete patent application consists of these components, each serving a distinct
@@ -187,6 +230,46 @@ Consider independent claims of different types:
 - Product claim: The tangible output or device.
 - Use claim: Application in a specific field (common in CNIPA practice).
 
+### Compact Claim Strategy
+
+When the filing budget or jurisdictional fee schedule encourages a small claim
+set, a practical 10-claim structure is:
+
+1. Independent method claim covering the full technical pipeline.
+2. Dependent claim for data acquisition or preprocessing.
+3. Dependent claim for physical consistency, filtering, calibration, or quality
+   control.
+4. Dependent claim for feature/indicator extraction.
+5. Dependent claim for classification, scoring, fusion, or weighting.
+6. Dependent claim for preferred baselines, adaptable parameters, or calibration
+   logic.
+7. Dependent claim for thresholding, percentile selection, confidence intervals,
+   or risk-level determination.
+8. Dependent claim for mapping results into a downstream artifact, scenario,
+   control command, report, or test case.
+9. Dependent claim for validation, pass/fail criteria, monitoring, or feedback.
+10. System/device claim with processor, memory, and modules configured to
+    execute the method.
+
+This structure is not mandatory. Use it when the invention is a data or method
+pipeline and the user wants reasonable scope without expanding claim count.
+
+### AI and Algorithm Claim Support
+
+For AI, statistical, or algorithmic inventions, avoid claims that read like pure
+mathematics. Tie each algorithmic step to a concrete technical context:
+
+- input data source, sensor, vehicle state, industrial equipment, simulation
+  platform, or computing system;
+- data transformation that improves signal quality, physical consistency,
+  risk estimation, resource allocation, test generation, or control;
+- output that changes a technical artifact, such as a scenario file, test case,
+  control parameter, alert, model update, or verification report;
+- boundary handling for invalid values, missing data, low-speed divisions,
+  non-convergent conditions, or conflicting measurements;
+- measurable technical effect, such as fewer false alarms, better coverage,
+  lower computation, more stable classification, or reproducible test cases.
+
 ## Patent Drawings Requirements
 
 ### General Rules (USPTO)
@@ -240,6 +323,30 @@ Consider independent claims of different types:
 - Missing alternative embodiments that you discussed verbally.
 - Inconsistent reference numerals between drawings and text.
 - Claims that do not match the specification terminology.
+- Concrete weights, thresholds, or file formats written as mandatory limitations
+  when they should be preferred embodiments.
+- A final step that uses only one simple threshold even though the disclosure
+  describes a richer multi-indicator or multi-stage method.
+- Formula definitions without units, input/output meanings, risk direction, or
+  invalid-value handling.
+- Standard names or file extensions that may be stale or incorrectly conflated.
+
+### Attorney Draft Revision Workflow
+
+1. Confirm the latest draft and preserve the original file.
+2. Read the claims, specification, abstract, drawings, and comments before
+   editing any one section.
+3. Triage issues into: attorney-format issues, inventor-technical issues,
+   claim-scope issues, drawing issues, and evidence/support issues.
+4. If tracked changes are requested, use redlines or comments rather than
+   rewriting the document as plain text.
+5. Keep claim amendments small unless the invention is structurally wrong or
+   unsupported.
+6. After revision, check claim count, terminology consistency, drawing
+   references, and whether each broadened phrase is supported by the
+   specification.
+7. For Word files, validate that comments, tracked changes, embedded images,
+   and pagination still open correctly after editing.
 
 ## Patent Lifecycle Timeline
 

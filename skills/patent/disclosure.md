@@ -214,6 +214,34 @@ improve the quality of disclosures:
   advantages (cost, deployment ease, compatibility).
 - Connect advantages to specific technical features of the invention.
 
+### AI / Software / Autonomous Systems Disclosure Checklist
+
+For AI, data-driven testing, autonomous driving, robotics, industrial software,
+or simulation inventions, a strong disclosure should make the technical coupling
+visible. Do not stop at "use an algorithm to calculate a score".
+
+Add the following details where applicable:
+
+- Data source: sensor type, log source, simulation input, annotation source,
+  vehicle state, road geometry, equipment state, or system event stream.
+- Preprocessing: coordinate conversion, synchronization, filtering, calibration,
+  outlier removal, quality scoring, or physical-consistency checks.
+- Feature or indicator definitions: formulas, variables, units, direction of
+  risk/benefit, valid range, and invalid-value handling.
+- Model or algorithm role: whether it classifies, scores, predicts, selects,
+  generates, validates, monitors, or controls.
+- Adaptability: how thresholds, weights, baselines, or rules may be calibrated
+  by domain, object type, speed range, environmental condition, or expert labels.
+- Downstream artifact: generated test case, scenario file, simulation parameter,
+  control instruction, warning, report, or verification evidence.
+- Technical effect: why the pipeline improves a technical system rather than
+  merely presenting information or doing generic statistics.
+
+Use concrete numbers carefully. If a value comes from one experiment, write it
+as an example, preferred baseline, range, or validation result. Avoid wording
+that turns one dataset, one city, one platform, or one threshold into the only
+embodiment.
+
 ### Document Version Naming Convention
 
 When iterating on disclosure documents with patent agents or attorneys, use

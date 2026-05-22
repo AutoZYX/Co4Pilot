@@ -17,8 +17,16 @@ An agent for end-to-end patent lifecycle management. From mining patentable idea
 - `patent/patent-mining.md`
 - `patent/disclosure.md`
 - `patent/patent-drafting.md`
-- `patent/patent-drawing.md` — 专利附图绘制（v2.0，基于 10 篇已授权 AD/AI 专利蒸馏）
+- `patent/patent-drawing.md` — 专利附图绘制（v2.4；风险分布图采用上阈值/中分布/下等级带三层结构）
 - `patent/office-action.md`
+
+## Public-Safe Case Transfer
+
+When improving this agent from real patent work, transfer only reusable patterns:
+claim architecture, disclosure checklists, figure layout rules, revision workflow,
+and office-action reasoning patterns. Remove private project names, local paths,
+unfiled claim text, exact unpublished data, attorney comments, and internal case
+codes before committing changes.
 
 ## Usage
 Invoke this agent when you need to:
